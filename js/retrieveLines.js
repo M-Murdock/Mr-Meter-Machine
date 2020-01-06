@@ -1,19 +1,30 @@
-const Excel= require('exceljs');
-const express = require('express')
-const app = express()
-const port = 3000
+const fs = require('fs');
+var express = require('express');
+var bodyParser= require('body-parser');
+const http = require('http');
+var app = express();
+var urlencodedParser = bodyParser.urlencoded({ extended: true });
 
-var text;
-var workbook = new Excel.Workbook();
-workbook.xlsx.readFile("IliadLines/Iliad-1-Meter.xlsx").then(function () {
-  var worksheet = workbook.getWorksheet('Book 1');
-  var cell = worksheet.getCell("B2").value;
-  text = cell;
-  // document.getElementByID("lines").value = cell;
-  console.log(cell);
-
-  // Pass back the spreadsheet data
-  app.get('/test', function(req, res, next) {
-    res.json({ message: "Hello world" });
-  });
+//The initial form for choosing lines
+app.get('/', function (req, res) {
+  res.sendFile('/Users/mallard/Mr-Meter-Machine/index.html');
 });
+
+//Set up the server
+app.listen(8080, () => {
+  console.log('Server is listening on port ' + 8080);
+})
+
+//The page for scanning
+app.post('/linesChosen', urlencodedParser, function(req, res) {
+  res.send('Lines: ' + req.body.start + '-' + req.body.end);
+  // res.send('Hello World');
+});
+
+  // fs.readFile('/Users/mallard/Mr-Meter-Machine/IliadLines/csvjson.json', (err, data) => {
+  //   if (err) throw err;
+  //   let lines= JSON.parse(data);
+  //   return lines[1].Text;
+  //   // console.log(lines[start].Text);
+  //   // console.log(lines[end].Text);
+  // });
