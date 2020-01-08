@@ -3,12 +3,14 @@ $(document).ready(function(){
   $("#wrong").hide();
   $(".correct").hide();
   $(".answer").hide();
+  $(".notes").hide();
 
   // Store the line, correct answer, and user's input
   $(".answer").first().show();
   var curLine = $(".line").first();
   var curCorrect = $(".correct").first();
   var curAnswer = $(".answer").first();
+  var curNotes = $(".notes").first();
   curLine.css('color', 'red');
 
   //Pressing enter triggers the "done" button
@@ -28,6 +30,7 @@ $(document).ready(function(){
       $("#right").show();
       $("#wrong").hide();
       curAnswer.hide();
+      curNotes.hide();
       curCorrect.show();
       curLine.css('color', 'black');
 
@@ -36,10 +39,11 @@ $(document).ready(function(){
         alert("Nice job! You've finished!");
       }
       else {
-        curAnswer = curAnswer.next().next().next().next();
-        curLine = curLine.next().next().next().next();
+        curAnswer = curAnswer.next().next().next();
+        curLine = curLine.next().next().next();
+        curNotes = curNotes.next();
         curAnswer.show();
-        curCorrect = curCorrect.next().next().next().next();
+        curCorrect = curCorrect.next().next().next();
         curLine.css('color', 'red');
         //Pressing enter triggers the "done" button
         curAnswer.keyup(function(event) {
@@ -54,6 +58,7 @@ $(document).ready(function(){
     else {
       $("#right").hide();
       $("#wrong").show();
+      curNotes.show();
     }
   });
 });

@@ -24,9 +24,11 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
   fs.readFile(file, (err, data) => {
     if (err) throw err;
     let lines= JSON.parse(data);
+
     var chosenLines = '';
     var scansion = '';
-    // Read each line, adding its scansion to the text file
+    var usefulNotes = '';
+    // Read each line
     for (var i = req.body.start; i <= req.body.end; i++) {
       scansion = '';
       scansion += (lines[i-1].__0);
@@ -37,11 +39,24 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
       scansion += (lines[i-1].__5);
       scansion += ("\n");
 
+      var notes = "";
+      if(lines[i-1].MetricalLengthening != '') {
+        notes += '\nMetrical Lengthening: ' + lines[i-1].MetricalLengthening;
+      }
+      if(lines[i-1].Synezesis != '') {
+        notes += '\nSynezesis: ' + lines[i-1].Synezesis;
+      }
+      if(lines[i-1].Correption != '') {
+        notes += '\nCorreption: ' + lines[i-1].Correption;
+      }
+      if(lines[i-1].textother != '') {
+        notes += '\nText/Other: ' + lines[i-1].textother;
+      }
 
       chosenLines += '<input type="text" class="answer">';
       chosenLines += '<p class="correct"> ' + scansion + '</p>';
       chosenLines += '<p class="line">' + lines[i-1].Text + '</p>';
-      chosenLines += '<p class="notes"> ' + lines[i-1].textother + '</p>'
+      usefulNotes += '<p class="notes"> ' + notes + '</p>'
     }
 
 
@@ -57,11 +72,12 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
       +chosenLines+
       '<button id="Done">Done</button>\
       <p id="right">Great Job!</p>\
-      <p id="wrong">Not Quite</p>\
-    </body>'
-    fs.writeFile('scansion.html', html, (err) => {
-      if (err) throw err;
-    });
+      <p id="wrong">Not Quite</p>'
+      + usefulNotes +
+    '</body>'
+    // fs.writeFile('scansion.html', html, (err) => {
+    //   if (err) throw err;
+    // });
     // Display the lines on the page
     res.send(html);
   });
