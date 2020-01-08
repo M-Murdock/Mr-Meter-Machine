@@ -38,10 +38,9 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
       scansion += ("\n");
 
 
-      chosenLines += '<p class="line">' + lines[i-1].Text + '</p>';
-      // chosenLines += '<input type="text" class="correct" value="' + scansion + '"><input>';
-      chosenLines += '<p class="correct"> ' + scansion + '</p>';
       chosenLines += '<input type="text" class="answer">';
+      chosenLines += '<p class="correct"> ' + scansion + '</p>';
+      chosenLines += '<p class="line">' + lines[i-1].Text + '</p>';
       chosenLines += '<p class="notes"> ' + lines[i-1].textother + '</p>'
     }
 
@@ -65,6 +64,5 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
     });
     // Display the lines on the page
     res.send(html);
-    // res.sendFile('/Users/mallard/Mr-Meter-Machine/js/scansion.html');
   });
 });
