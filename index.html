@@ -2,15 +2,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Mr. Meter Machine</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="js/retrieveLines.js"></script>
 </head>
 <body>
-  <h1>Mr.Meter Machine</h1>
+  <h1>Mr. Meter Machine</h1>
   <form action="http://localhost:8080/linesChosen" method = "post">
+    <label for="book">Book</label>
+    <input type="number" min="1" max="24" name="book" value="1">
     <label for="start">From line</label>
-    <input type="text" name="start" value="">
+    <input type="number" name="start" min="1" value="1">
     <label for="end">to</label>
-    <input type="text" name="end" value="">
+    <input type="number" name="end" min="2" value="2">
     <input type="submit" name="submit"/>
   </form>
 </body>
