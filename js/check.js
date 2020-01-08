@@ -22,8 +22,8 @@ $(document).ready(function(){
   });
   // When the button is clicked, check the answer
   $("#Done").click(function() {
-    var answer = curAnswer.val();
-    var correct = curCorrect.text();
+    var answer = curAnswer.val().replace(/\s/g, "");
+    var correct = curCorrect.text().replace(/\s/g, "");
 
     // If the answer is correct, move to the next line
     if($.trim(answer) === $.trim(correct)) {
@@ -37,6 +37,7 @@ $(document).ready(function(){
       // Check if all the lines have been scanned
       if(curAnswer.is($(".answer").last())) {
         alert("Nice job! You've finished!");
+        $(".notes").show();
       }
       else {
         curAnswer = curAnswer.next().next().next();

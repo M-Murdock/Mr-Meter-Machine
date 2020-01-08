@@ -53,7 +53,7 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
         notes += '\nText/Other: ' + lines[i-1].textother;
       }
 
-      chosenLines += '<input type="text" class="answer">';
+      chosenLines += '<input type="text" class="answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">';
       chosenLines += '<p class="correct"> ' + scansion + '</p>';
       chosenLines += '<p class="line">' + lines[i-1].Text + '</p>';
       usefulNotes += '<p class="notes"> ' + notes + '</p>'
@@ -64,20 +64,19 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
     <head>\
       <meta charset="UTF-8">\
       <title>Mr. Meter Machine</title>\
+      <link rel="stylesheet" type="text/css" href="styles.css">\
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>\
       <script src="js/check.js"></script>\
     </head>\
     <body>\
-      <h1>Mr.Meter Machine</h1>'
+      <h1>Mr. Meter Machine</h1>\
+      <p>Instructions: Scan the line in red by marking syllables as short (u) and long (-). Press "done" or hit enter to check your answer. </p>'
       +chosenLines+
       '<button id="Done">Done</button>\
       <p id="right">Great Job!</p>\
       <p id="wrong">Not Quite</p>'
       + usefulNotes +
     '</body>'
-    // fs.writeFile('scansion.html', html, (err) => {
-    //   if (err) throw err;
-    // });
     // Display the lines on the page
     res.send(html);
   });
