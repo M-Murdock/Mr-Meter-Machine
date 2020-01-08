@@ -12,6 +12,7 @@ $(document).ready(function(){
   var curAnswer = $(".answer").first();
   var curNotes = $(".notes").first();
   curLine.css('color', 'red');
+  curAnswer.focus();
 
   //Pressing enter triggers the "done" button
   curAnswer.keyup(function(event) {
@@ -22,6 +23,7 @@ $(document).ready(function(){
   });
   // When the button is clicked, check the answer
   $("#Done").click(function() {
+    curAnswer.blur();
     var answer = curAnswer.val().replace(/\s/g, "");
     var correct = curCorrect.text().replace(/\s/g, "");
 
@@ -36,16 +38,19 @@ $(document).ready(function(){
 
       // Check if all the lines have been scanned
       if(curAnswer.is($(".answer").last())) {
+        curAnswer.blur();
         alert("Nice job! You've finished!");
         $(".notes").show();
       }
       else {
+        curAnswer.blur();
         curAnswer = curAnswer.next().next().next();
         curLine = curLine.next().next().next();
         curNotes = curNotes.next();
         curAnswer.show();
         curCorrect = curCorrect.next().next().next();
         curLine.css('color', 'red');
+        curAnswer.focus();
         //Pressing enter triggers the "done" button
         curAnswer.keyup(function(event) {
           if (event.keyCode === 13) {
@@ -60,6 +65,7 @@ $(document).ready(function(){
       $("#right").hide();
       $("#wrong").show();
       curNotes.show();
+      curAnswer.focus();
     }
   });
 });
