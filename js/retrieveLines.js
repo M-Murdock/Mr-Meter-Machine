@@ -5,21 +5,22 @@ const http = require('http');
 var app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: true });
 
-app.use(express.static('/Users/mallard/Mr-Meter-Machine'));
+app.use(express.static('../'));
 //The initial form for choosing lines
 app.get('/', function (req, res) {
-  res.sendFile('/Users/mallard/Mr-Meter-Machine/index.html');
+  res.sendFile('../index.html');
 });
 
 //Set up the server
-app.listen(8080, () => {
-  console.log('Server is listening on port ' + 8080);
+var port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log('Server is listening on port ' + port);
 })
 
 //The page for scanning
 app.post('/linesChosen', urlencodedParser, function(req, res) {
   var book = req.body.book;
-  var file = '/Users/mallard/Mr-Meter-Machine/IliadLines/book' + book + '.json';
+  var file = '../IliadLines/book' + book + '.json';
   // Read the JSON file containing the chosen Iliad lines
   fs.readFile(file, (err, data) => {
     if (err) throw err;
@@ -28,8 +29,10 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
     var chosenLines = '';
     var scansion = '';
     var usefulNotes = '';
+    var start = req.body.start;
+    var end = req.body.end;
     // Read each line
-    for (var i = req.body.start; i <= req.body.end; i++) {
+    for (var i = start; i <= end; i++) {
       scansion = '';
       scansion += (lines[i-1].__0);
       scansion += (lines[i-1].__1);
@@ -70,7 +73,7 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
     </head>\
     <body>\
       <h1>Mr. Meter Machine</h1>\
-      <p>Instructions: Scan the line in red by marking syllables as short (u) and long (-). Press "done" or hit enter to check your answer. </p>'
+      <p>Instructions: Scan the line in red in the text box by marking syllables as short (u) or long (hyphen -). Press "done" or hit enter to check your answer. Once you get it right, you can scan the next line.</p>'
       +chosenLines+
       '<button id="Done">Done</button>\
       <p id="right">Great Job!</p>\
