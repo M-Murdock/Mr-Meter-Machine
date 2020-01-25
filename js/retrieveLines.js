@@ -1,3 +1,5 @@
+// Only needs to be run once to generate Iliad.html
+
 const fs = require('fs');
 var express = require('express');
 var bodyParser= require('body-parser');
@@ -32,7 +34,7 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
     var start = req.body.start;
     var end = req.body.end;
     // Read each line
-    for (var i = start; i <= end; i++) {
+    for (var i = 1; i <= 611; i++) {
       scansion = '';
       scansion += (lines[i-1].__0);
       scansion += (lines[i-1].__1);
@@ -56,10 +58,10 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
         notes += '\nText/Other: ' + lines[i-1].textother;
       }
 
-      chosenLines += '<input type="text" class="answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">';
-      chosenLines += '<p class="correct"> ' + scansion + '</p>';
-      chosenLines += '<p class="line">' + lines[i-1].Text + '</p>';
-      usefulNotes += '<p class="notes"> ' + notes + '</p>'
+      chosenLines += '<input type="text" class="answer ' + (i) + '" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">';
+      chosenLines += '<p class="correct ' + (i) + '"> ' + scansion + '</p>';
+      chosenLines += '<p class="line ' + (i) + '">' + lines[i-1].Text + '</p>';
+      usefulNotes += '<p class="notes ' + (i) + '"> ' + notes + '</p>'
     }
 
 
@@ -81,6 +83,12 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
       + usefulNotes +
     '</body>'
     // Display the lines on the page
+
+    fs.writeFile('Iliad.html', html, (err) =>  {
+      if (err) throw err;
+
+      console.log('Iliad file written');
+    });
     res.send(html);
   });
 });

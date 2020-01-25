@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8">
+   <title>Mr. Meter Machine</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/check.js"></script>
+   <h1>Mr. Meter Machine</h1>
+   <p>Instructions: Scan the line in red in the text box by marking syllables as short (u) or long (hyphen -). Press "done" or hit enter to check your answer. Once you get it right, you can scan the next line.</p>
+   <input type="text" class="answer 1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 1"> -uu-uu---uu-uu--</p>
+   <p class="line 1">μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος</p>
+   <input type="text" class="answer 2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 2"> -uu---uu---uu--</p>
+   <p class="line 2">οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε,</p>
+   <input type="text" class="answer 3" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 3"> -------uu-uu--</p>
+   <p class="line 3">πολλὰς δ᾽ ἰφθίμους ψυχὰς Ἄϊδι προΐαψεν</p>
+   <input type="text" class="answer 4" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 4"> -----uu-uu-uu--</p>
+   <p class="line 4">ἡρώων, αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν</p>
+   <input type="text" class="answer 5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 5"> ---uu-uu-uu-uu--</p>
+   <p class="line 5">οἰωνοῖσί τε πᾶσι, Διὸς δ᾽ ἐτελείετο βουλή,</p>
+   <input type="text" class="answer 6" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 6"> -----uu---uu--</p>
+   <p class="line 6">ἐξ οὗ δὴ τὰ πρῶτα διαστήτην ἐρίσαντε</p>
+   <input type="text" class="answer 7" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 7"> -uu-uu-----uu--</p>
+   <p class="line 7">Ἀτρεΐδης τε ἄναξ ἀνδρῶν καὶ δῖος Ἀχιλλεύς.</p>
+   <input type="text" class="answer 8" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 8"> ---uu-uu-uu-uu--</p>
+   <p class="line 8">τίς τ᾽ ἄρ σφωε θεῶν ἔριδι ξυνέηκε μάχεσθαι;</p>
+   <input type="text" class="answer 9" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 9"> ---uu-uu-uu-uu--</p>
+   <p class="line 9">Λητοῦς καὶ Διὸς υἱός: ὃ γὰρ βασιλῆϊ χολωθεὶς</p>
+   <input type="text" class="answer 10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 10"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 10">νοῦσον ἀνὰ στρατὸν ὄρσε κακήν, ὀλέκοντο δὲ λαοί,</p>
+   <input type="text" class="answer 11" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 11"> -uu-----uu----</p>
+   <p class="line 11">οὕνεκα τὸν Χρύσην ἠτίμασεν ἀρητῆρα</p>
+   <input type="text" class="answer 12" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 12"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 12">Ἀτρεΐδης: ὃ γὰρ ἦλθε θοὰς ἐπὶ νῆας Ἀχαιῶν</p>
+   <input type="text" class="answer 13" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 13"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 13">λυσόμενός τε θύγατρα φέρων τ᾽ ἀπερείσι᾽ ἄποινα,</p>
+   <input type="text" class="answer 14" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 14"> -uu-uu---uu----</p>
+   <p class="line 14">στέμματ᾽ ἔχων ἐν χερσὶν ἑκηβόλου Ἀπόλλωνος</p>
+   <input type="text" class="answer 15" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 15"> -uu-uu---uu-uu--</p>
+   <p class="line 15">χρυσέῳ ἀνὰ σκήπτρῳ, καὶ λίσσετο πάντας Ἀχαιούς,</p>
+   <input type="text" class="answer 16" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 16"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 16">Ἀτρεΐδα δὲ μάλιστα δύω, κοσμήτορε λαῶν:</p>
+   <input type="text" class="answer 17" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 17"> -uu-uu-uu---uu--</p>
+   <p class="line 17">Ἀτρεΐδαι τε καὶ ἄλλοι ἐϋκνήμιδες Ἀχαιοί,</p>
+   <input type="text" class="answer 18" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 18"> -----uu-uu-uu--</p>
+   <p class="line 18">ὑμῖν μὲν θεοὶ δοῖεν Ὀλύμπια δώματ᾽ ἔχοντες</p>
+   <input type="text" class="answer 19" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 19"> ---uu-uu---uu--</p>
+   <p class="line 19">ἐκπέρσαι Πριάμοιο πόλιν, εὖ δ᾽ οἴκαδ᾽ ἱκέσθαι:</p>
+   <input type="text" class="answer 20" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 20"> -uu---uu-uu-uu--</p>
+   <p class="line 20">παῖδα δ᾽ ἐμοὶ λύσαιτε φίλην, τὰ δ᾽ ἄποινα δέχεσθαι,</p>
+   <input type="text" class="answer 21" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 21"> -uu-uu-uu-uu----</p>
+   <p class="line 21">ἁζόμενοι Διὸς υἱὸν ἑκηβόλον Ἀπόλλωνα.</p>
+   <input type="text" class="answer 22" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 22"> -----uu---uu--</p>
+   <p class="line 22">ἔνθ᾽ ἄλλοι μὲν πάντες ἐπευφήμησαν Ἀχαιοὶ</p>
+   <input type="text" class="answer 23" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 23"> ---uu-uu-uu-uu--</p>
+   <p class="line 23">αἰδεῖσθαί θ᾽ ἱερῆα καὶ ἀγλαὰ δέχθαι ἄποινα:</p>
+   <input type="text" class="answer 24" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 24"> ---uu-uu-uu-uu--</p>
+   <p class="line 24">ἀλλ᾽ οὐκ Ἀτρεΐδῃ Ἀγαμέμνονι ἥνδανε θυμῷ,</p>
+   <input type="text" class="answer 25" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 25"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 25">ἀλλὰ κακῶς ἀφίει, κρατερὸν δ᾽ ἐπὶ μῦθον ἔτελλε:</p>
+   <input type="text" class="answer 26" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 26"> -uu---uu-uu-uu--</p>
+   <p class="line 26">μή σε γέρον κοίλῃσιν ἐγὼ παρὰ νηυσὶ κιχείω</p>
+   <input type="text" class="answer 27" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 27"> -------uu-uu--</p>
+   <p class="line 27">ἢ νῦν δηθύνοντ᾽ ἢ ὕστερον αὖτις ἰόντα,</p>
+   <input type="text" class="answer 28" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 28"> -uu-------uu--</p>
+   <p class="line 28">μή νύ τοι οὐ χραίσμῃ σκῆπτρον καὶ στέμμα θεοῖο:</p>
+   <input type="text" class="answer 29" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 29"> -uu-------uu--</p>
+   <p class="line 29">τὴν δ᾽ ἐγὼ οὐ λύσω: πρίν μιν καὶ γῆρας ἔπεισιν</p>
+   <input type="text" class="answer 30" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 30"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 30">ἡμετέρῳ ἐνὶ οἴκῳ ἐν Ἄργεϊ τηλόθι πάτρης</p>
+   <input type="text" class="answer 31" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 31"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 31">ἱστὸν ἐποιχομένην καὶ ἐμὸν λέχος ἀντιόωσαν:</p>
+   <input type="text" class="answer 32" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 32"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 32">ἀλλ᾽ ἴθι μή μ᾽ ἐρέθιζε σαώτερος ὥς κε νέηαι.</p>
+   <input type="text" class="answer 33" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 33"> -uu---uu-uu-uu--</p>
+   <p class="line 33">ὣς ἔφατ᾽, ἔδεισεν δ᾽ ὃ γέρων καὶ ἐπείθετο μύθῳ:</p>
+   <input type="text" class="answer 34" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 34"> -uu-uu-uu---uu--</p>
+   <p class="line 34">βῆ δ᾽ ἀκέων παρὰ θῖνα πολυφλοίσβοιο θαλάσσης:</p>
+   <input type="text" class="answer 35" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 35"> -uu-uu-uu---uu--</p>
+   <p class="line 35">πολλὰ δ᾽ ἔπειτ᾽ ἀπάνευθε κιὼν ἠρᾶθ᾽ ὃ γεραιὸς</p>
+   <input type="text" class="answer 36" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 36"> ---uu-uu-uu-uu--</p>
+   <p class="line 36">Ἀπόλλωνι ἄνακτι, τὸν ἠΰκομος τέκε Λητώ:</p>
+   <input type="text" class="answer 37" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 37"> -uu-uu-----uu--</p>
+   <p class="line 37">κλῦθί μευ ἀργυρότοξ᾽, ὃς Χρύσην ἀμφιβέβηκας</p>
+   <input type="text" class="answer 38" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 38"> ---uu-uu-uu-uu--</p>
+   <p class="line 38">Κίλλάν τε ζαθέην Τενέδοιό τε ἶφι ἀνάσσεις,</p>
+   <input type="text" class="answer 39" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 39"> ---uu-uu-uu-uu--</p>
+   <p class="line 39">Σμινθεῦ εἴ ποτέ τοι χαρίεντ᾽ ἐπὶ νηὸν ἔρεψα,</p>
+   <input type="text" class="answer 40" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 40"> ---uu-uu-uu-uu--</p>
+   <p class="line 40">ἢ εἰ δή ποτέ τοι κατὰ πίονα μηρί᾽ ἔκηα</p>
+   <input type="text" class="answer 41" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 41"> -----uu---uu--</p>
+   <p class="line 41">ταύρων ἠδ᾽ αἰγῶν, τὸ δέ μοι κρήηνον ἐέλδωρ:</p>
+   <input type="text" class="answer 42" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 42"> ---uu-uu-uu-uu--</p>
+   <p class="line 42">τίσειαν Δαναοὶ ἐμὰ δάκρυα σοῖσι βέλεσσιν.</p>
+   <input type="text" class="answer 43" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 43"> -uu-uu---uu-uu--</p>
+   <p class="line 43">ὣς ἔφατ᾽ εὐχόμενος, τοῦ δ᾽ ἔκλυε Φοῖβος Ἀπόλλων,</p>
+   <input type="text" class="answer 44" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 44"> -uu---uu---uu--</p>
+   <p class="line 44">βῆ δὲ κατ᾽ Οὐλύμποιο καρήνων χωόμενος κῆρ,</p>
+   <input type="text" class="answer 45" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 45"> ---uu---uu-uu--</p>
+   <p class="line 45">τόξ᾽ ὤμοισιν ἔχων ἀμφηρεφέα τε φαρέτρην:</p>
+   <input type="text" class="answer 46" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 46"> ---uu-uu---uu--</p>
+   <p class="line 46">ἔκλαγξαν δ᾽ ἄρ᾽ ὀϊστοὶ ἐπ᾽ ὤμων χωομένοιο,</p>
+   <input type="text" class="answer 47" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 47"> -----uu-uu-uu--</p>
+   <p class="line 47">αὐτοῦ κινηθέντος: ὃ δ᾽ ἤϊε νυκτὶ ἐοικώς.</p>
+   <input type="text" class="answer 48" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 48"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 48">ἕζετ᾽ ἔπειτ᾽ ἀπάνευθε νεῶν, μετὰ δ᾽ ἰὸν ἕηκε:</p>
+   <input type="text" class="answer 49" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 49"> -----uu-uu-uu--</p>
+   <p class="line 49">δεινὴ δὲ κλαγγὴ γένετ᾽ ἀργυρέοιο βιοῖο:</p>
+   <input type="text" class="answer 50" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 50"> -----uu-uu-uu--</p>
+   <p class="line 50">οὐρῆας μὲν πρῶτον ἐπῴχετο καὶ κύνας ἀργούς,</p>
+   <input type="text" class="answer 51" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 51"> -uu---uu-uu-uu--</p>
+   <p class="line 51">αὐτὰρ ἔπειτ᾽ αὐτοῖσι βέλος ἐχεπευκὲς ἐφιεὶς</p>
+   <input type="text" class="answer 52" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 52"> ---uu-uu-uu-uu--</p>
+   <p class="line 52">βάλλ᾽: αἰεὶ δὲ πυραὶ νεκύων καίοντο θαμειαί.</p>
+   <input type="text" class="answer 53" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 53"> ---uu-uu-uu-uu--</p>
+   <p class="line 53">ἐννῆμαρ μὲν ἀνὰ στρατὸν ᾤχετο κῆλα θεοῖο,</p>
+   <input type="text" class="answer 54" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 54"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 54">τῇ δεκάτῃ δ᾽ ἀγορὴν δὲ καλέσσατο λαὸν Ἀχιλλεύς:</p>
+   <input type="text" class="answer 55" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 55"> -uu-uu-uu---uu--</p>
+   <p class="line 55">τῷ γὰρ ἐπὶ φρεσὶ θῆκε θεὰ λευκώλενος Ἥρη:</p>
+   <input type="text" class="answer 56" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 56"> -uu-uu-uu---uu--</p>
+   <p class="line 56">κήδετο γὰρ Δαναῶν, ὅτι ῥα θνήσκοντας ὁρᾶτο.</p>
+   <input type="text" class="answer 57" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 57"> -uu---uu-uu-uu--</p>
+   <p class="line 57">οἳ δ᾽ ἐπεὶ οὖν ἤγερθεν ὁμηγερέες τε γένοντο,</p>
+   <input type="text" class="answer 58" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 58"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 58">τοῖσι δ᾽ ἀνιστάμενος μετέφη πόδας ὠκὺς Ἀχιλλεύς:</p>
+   <input type="text" class="answer 59" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 59"> -uu---uu---uu--</p>
+   <p class="line 59">Ἀτρεΐδη νῦν ἄμμε παλιμπλαγχθέντας ὀΐω</p>
+   <input type="text" class="answer 60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 60"> -uu-----uu-uu--</p>
+   <p class="line 60">ἂψ ἀπονοστήσειν, εἴ κεν θάνατόν γε φύγοιμεν,</p>
+   <input type="text" class="answer 61" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 61"> -uu-uu-uu---uu--</p>
+   <p class="line 61">εἰ δὴ ὁμοῦ πόλεμός τε δαμᾷ καὶ λοιμὸς Ἀχαιούς:</p>
+   <input type="text" class="answer 62" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 62"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 62">ἀλλ᾽ ἄγε δή τινα μάντιν ἐρείομεν ἢ ἱερῆα</p>
+   <input type="text" class="answer 63" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 63"> -uu-uu---uu-uu--</p>
+   <p class="line 63">ἢ καὶ ὀνειροπόλον, καὶ γάρ τ᾽ ὄναρ ἐκ Διός ἐστιν,</p>
+   <input type="text" class="answer 64" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 64"> ---uu-uu-uu-uu--</p>
+   <p class="line 64">ὅς κ᾽ εἴποι ὅ τι τόσσον ἐχώσατο Φοῖβος Ἀπόλλων,</p>
+   <input type="text" class="answer 65" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 65"> -uu---uu-uu-uu--</p>
+   <p class="line 65">εἴτ᾽ ἄρ᾽ ὅ γ᾽ εὐχωλῆς ἐπιμέμφεται ἠδ᾽ ἑκατόμβης,</p>
+   <input type="text" class="answer 66" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 66"> ---------uu--</p>
+   <p class="line 66">αἴ κέν πως ἀρνῶν κνίσης αἰγῶν τε τελείων</p>
+   <input type="text" class="answer 67" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 67"> -uu-uu---uu-uu--</p>
+   <p class="line 67">βούλεται ἀντιάσας ἡμῖν ἀπὸ λοιγὸν ἀμῦναι.</p>
+   <input type="text" class="answer 68" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 68"> -uu---uu-uu-uu--</p>
+   <p class="line 68">ἤτοι ὅ γ᾽ ὣς εἰπὼν κατ᾽ ἄρ᾽ ἕζετο: τοῖσι δ᾽ ἀνέστη</p>
+   <input type="text" class="answer 69" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 69"> ---uu---uu-uu--</p>
+   <p class="line 69">Κάλχας Θεστορίδης οἰωνοπόλων ὄχ᾽ ἄριστος,</p>
+   <input type="text" class="answer 70" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 70"> ---uu-uu-uu-uu--</p>
+   <p class="line 70">ὃς ᾔδη τά τ᾽ ἐόντα τά τ᾽ ἐσσόμενα πρό τ᾽ ἐόντα,</p>
+   <input type="text" class="answer 71" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 71"> -----uu---uu--</p>
+   <p class="line 71">καὶ νήεσσ᾽ ἡγήσατ᾽ Ἀχαιῶν Ἴλιον εἴσω</p>
+   <input type="text" class="answer 72" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 72"> -uu-uu---uu-uu--</p>
+   <p class="line 72">ἣν διὰ μαντοσύνην, τήν οἱ πόρε Φοῖβος Ἀπόλλων:</p>
+   <input type="text" class="answer 73" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 73"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 73">ὅ σφιν ἐὺ φρονέων ἀγορήσατο καὶ μετέειπεν:</p>
+   <input type="text" class="answer 74" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 74"> -uu-uu-uu-uu----</p>
+   <p class="line 74">ὦ Ἀχιλεῦ κέλεαί με Διῒ φίλε μυθήσασθαι</p>
+   <input type="text" class="answer 75" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 75"> -uu---uu-uu-uu--</p>
+   <p class="line 75">μῆνιν Ἀπόλλωνος ἑκατηβελέταο ἄνακτος:</p>
+   <input type="text" class="answer 76" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 76"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 76">τοὶ γὰρ ἐγὼν ἐρέω: σὺ δὲ σύνθεο καί μοι ὄμοσσον</p>
+   <input type="text" class="answer 77" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 77"> -----uu---uu--</p>
+   <p class="line 77">ἦ μέν μοι πρόφρων ἔπεσιν καὶ χερσὶν ἀρήξειν:</p>
+   <input type="text" class="answer 78" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 78"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 78">ἦ γὰρ ὀΐομαι ἄνδρα χολωσέμεν, ὃς μέγα πάντων</p>
+   <input type="text" class="answer 79" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 79"> ---uu-----uu--</p>
+   <p class="line 79">Ἀργείων κρατέει καί οἱ πείθονται Ἀχαιοί:</p>
+   <input type="text" class="answer 80" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 80"> ---uu-uu-uu-uu--</p>
+   <p class="line 80">κρείσσων γὰρ βασιλεὺς ὅτε χώσεται ἀνδρὶ χέρηϊ:</p>
+   <input type="text" class="answer 81" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 81"> ---uu-uu---uu--</p>
+   <p class="line 81">εἴ περ γάρ τε χόλον γε καὶ αὐτῆμαρ καταπέψῃ,</p>
+   <input type="text" class="answer 82" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 82"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 82">ἀλλά τε καὶ μετόπισθεν ἔχει κότον, ὄφρα τελέσσῃ,</p>
+   <input type="text" class="answer 83" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 83"> ---uu-uu-uu-uu--</p>
+   <p class="line 83">ἐν στήθεσσιν ἑοῖσι: σὺ δὲ φράσαι εἴ με σαώσεις.</p>
+   <input type="text" class="answer 84" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 84"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 84">τὸν δ᾽ ἀπαμειβόμενος προσέφη πόδας ὠκὺς Ἀχιλλεύς:</p>
+   <input type="text" class="answer 85" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 85"> ---uu-uu-uu-uu--</p>
+   <p class="line 85">θαρσήσας μάλα εἰπὲ θεοπρόπιον ὅ τι οἶσθα:</p>
+   <input type="text" class="answer 86" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 86"> -uu---uu-uu-uu--</p>
+   <p class="line 86">οὐ μὰ γὰρ Ἀπόλλωνα Διῒ φίλον, ᾧ τε σὺ Κάλχαν</p>
+   <input type="text" class="answer 87" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 87"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 87">εὐχόμενος Δαναοῖσι θεοπροπίας ἀναφαίνεις,</p>
+   <input type="text" class="answer 88" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 88"> -uu---uu-uu-uu--</p>
+   <p class="line 88">οὔ τις ἐμεῦ ζῶντος καὶ ἐπὶ χθονὶ δερκομένοιο</p>
+   <input type="text" class="answer 89" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 89"> ---uu-uu---uu--</p>
+   <p class="line 89">σοὶ κοίλῃς παρὰ νηυσί βαρείας χεῖρας ἐποίσει</p>
+   <input type="text" class="answer 90" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 90"> ---uu---uu-uu--</p>
+   <p class="line 90">συμπάντων Δαναῶν, οὐδ᾽ ἢν Ἀγαμέμνονα εἴπῃς,</p>
+   <input type="text" class="answer 91" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 91"> ---uu-uu-uu-uu--</p>
+   <p class="line 91">ὃς νῦν πολλὸν ἄριστος Ἀχαιῶν εὔχεται εἶναι.</p>
+   <input type="text" class="answer 92" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 92"> -uu---uu-uu-uu--</p>
+   <p class="line 92">καὶ τότε δὴ θάρσησε καὶ ηὔδα μάντις ἀμύμων:</p>
+   <input type="text" class="answer 93" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 93"> -uu---uu-uu-uu--</p>
+   <p class="line 93">οὔ τ᾽ ἄρ ὅ γ᾽ εὐχωλῆς ἐπιμέμφεται οὐδ᾽ ἑκατόμβης,</p>
+   <input type="text" class="answer 94" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 94"> -uu---uu---uu--</p>
+   <p class="line 94">ἀλλ᾽ ἕνεκ᾽ ἀρητῆρος ὃν ἠτίμησ᾽ Ἀγαμέμνων,</p>
+   <input type="text" class="answer 95" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 95"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 95">οὐδ᾽ ἀπέλυσε θύγατρα καὶ οὐκ ἀπεδέξατ᾽ ἄποινα,</p>
+   <input type="text" class="answer 96" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 96"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 96">τοὔνεκ᾽ ἄρ᾽ ἄλγε᾽ ἔδωκεν ἑκηβόλος ἠδ᾽ ἔτι δώσει:</p>
+   <input type="text" class="answer 97" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 97"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 97">οὐδ᾽ ὅ γε πρὶν Δαναοῖσιν ἀεικέα λοιγὸν ἀπώσει</p>
+   <input type="text" class="answer 98" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 98"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 98">πρίν γ᾽ ἀπὸ πατρὶ φίλῳ δόμεναι ἑλικώπιδα κούρην</p>
+   <input type="text" class="answer 99" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 99"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 99">ἀπριάτην ἀνάποινον, ἄγειν θ᾽ ἱερὴν ἑκατόμβην</p>
+   <input type="text" class="answer 100" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 100"> ---uu-uu-uu-uu--</p>
+   <p class="line 100">ἐς Χρύσην: τότε κέν μιν ἱλασσάμενοι πεπίθοιμεν.</p>
+   <input type="text" class="answer 101" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 101"> -uu---uu-uu-uu--</p>
+   <p class="line 101">ἤτοι ὅ γ᾽ ὣς εἰπὼν κατ᾽ ἄρ᾽ ἕζετο: τοῖσι δ᾽ ἀνέστη</p>
+   <input type="text" class="answer 102" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 102"> ---uu-----uu--</p>
+   <p class="line 102">ἥρως Ἀτρεΐδης εὐρὺ κρείων Ἀγαμέμνων</p>
+   <input type="text" class="answer 103" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 103"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 103">ἀχνύμενος: μένεος δὲ μέγα φρένες ἀμφιμέλαιναι</p>
+   <input type="text" class="answer 104" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 104"> ---uu-uu-uu-uu--</p>
+   <p class="line 104">πίμπλαντ᾽, ὄσσε δέ οἱ πυρὶ λαμπετόωντι ἐΐκτην:</p>
+   <input type="text" class="answer 105" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 105"> -----uu-uu-uu--</p>
+   <p class="line 105">Κάλχαντα πρώτιστα κάκ᾽ ὀσσόμενος προσέειπε:</p>
+   <input type="text" class="answer 106" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 106"> -uu---uu---uu--</p>
+   <p class="line 106">μάντι κακῶν οὐ πώ ποτέ μοι τὸ κρήγυον εἶπας:</p>
+   <input type="text" class="answer 107" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 107"> ---uu-uu-uu----</p>
+   <p class="line 107">αἰεί τοι τὰ κάκ᾽ ἐστὶ φίλα φρεσὶ μαντεύεσθαι,</p>
+   <input type="text" class="answer 108" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 108"> ---uu---uu-uu--</p>
+   <p class="line 108">ἐσθλὸν δ᾽ οὔτέ τί πω εἶπας ἔπος οὔτ᾽ ἐτέλεσσας:</p>
+   <input type="text" class="answer 109" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 109"> ---uu-uu-uu-uu--</p>
+   <p class="line 109">καὶ νῦν ἐν Δαναοῖσι θεοπροπέων ἀγορεύεις</p>
+   <input type="text" class="answer 110" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 110"> ---uu-uu-uu-uu--</p>
+   <p class="line 110">ὡς δὴ τοῦδ᾽ ἕνεκά σφιν ἑκηβόλος ἄλγεα τεύχει,</p>
+   <input type="text" class="answer 111" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 111"> -uu-----uu-uu--</p>
+   <p class="line 111">οὕνεκ᾽ ἐγὼ κούρης Χρυσηΐδος ἀγλά᾽ ἄποινα</p>
+   <input type="text" class="answer 112" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 112"> -uu---uu-uu-uu--</p>
+   <p class="line 112">οὐκ ἔθελον δέξασθαι, ἐπεὶ πολὺ βούλομαι αὐτὴν</p>
+   <input type="text" class="answer 113" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 113"> -uu---uu---uu--</p>
+   <p class="line 113">οἴκοι ἔχειν: καὶ γάρ ῥα Κλυταιμνήστρης προβέβουλα</p>
+   <input type="text" class="answer 114" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 114"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 114">κουριδίης ἀλόχου, ἐπεὶ οὔ ἑθέν ἐστι χερείων,</p>
+   <input type="text" class="answer 115" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 115"> -uu-uu---uu-uu--</p>
+   <p class="line 115">οὐ δέμας οὐδὲ φυήν, οὔτ᾽ ἂρ φρένας οὔτέ τι ἔργα.</p>
+   <input type="text" class="answer 116" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 116"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 116">ἀλλὰ καὶ ὧς ἐθέλω δόμεναι πάλιν εἰ τό γ᾽ ἄμεινον:</p>
+   <input type="text" class="answer 117" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 117"> -uu-----uu-uu--</p>
+   <p class="line 117">βούλομ᾽ ἐγὼ λαὸν σῶν ἔμμεναι ἢ ἀπολέσθαι:</p>
+   <input type="text" class="answer 118" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 118"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 118">αὐτὰρ ἐμοὶ γέρας αὐτίχ᾽ ἑτοιμάσατ᾽ ὄφρα μὴ οἶος</p>
+   <input type="text" class="answer 119" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 119"> ---uu-uu-uu-uu--</p>
+   <p class="line 119">Ἀργείων ἀγέραστος ἔω, ἐπεὶ οὐδὲ ἔοικε:</p>
+   <input type="text" class="answer 120" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 120"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 120">λεύσσετε γὰρ τό γε πάντες ὅ μοι γέρας ἔρχεται ἄλλῃ.</p>
+   <input type="text" class="answer 121" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 121"> ---uu-uu-uu-uu--</p>
+   <p class="line 121">τὸν δ᾽ ἠμείβετ᾽ ἔπειτα ποδάρκης δῖος Ἀχιλλεύς:</p>
+   <input type="text" class="answer 122" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 122"> -uu---uu-uu-uu--</p>
+   <p class="line 122">Ἀτρεΐδη κύδιστε φιλοκτεανώτατε πάντων,</p>
+   <input type="text" class="answer 123" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 123"> -----uu-uu-uu--</p>
+   <p class="line 123">πῶς γάρ τοι δώσουσι γέρας μεγάθυμοι Ἀχαιοί;</p>
+   <input type="text" class="answer 124" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 124"> -uu-----uu-uu--</p>
+   <p class="line 124">οὐδέ τί που ἴδμεν ξυνήϊα κείμενα πολλά:</p>
+   <input type="text" class="answer 125" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 125"> -uu-uu---uu-uu--</p>
+   <p class="line 125">ἀλλὰ τὰ μὲν πολίων ἐξεπράθομεν, τὰ δέδασται,</p>
+   <input type="text" class="answer 126" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 126"> ---uu-uu-uu-uu--</p>
+   <p class="line 126">λαοὺς δ᾽ οὐκ ἐπέοικε παλίλλογα ταῦτ᾽ ἐπαγείρειν.</p>
+   <input type="text" class="answer 127" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 127"> -uu---uu-uu-uu--</p>
+   <p class="line 127">ἀλλὰ σὺ μὲν νῦν τήνδε θεῷ πρόες: αὐτὰρ Ἀχαιοὶ</p>
+   <input type="text" class="answer 128" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 128"> -----uu-uu-uu--</p>
+   <p class="line 128">τριπλῇ τετραπλῇ τ᾽ ἀποτείσομεν, αἴ κέ ποθι Ζεὺς</p>
+   <input type="text" class="answer 129" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 129"> -uu-----uu-uu--</p>
+   <p class="line 129">δῷσι πόλιν Τροίην εὐτείχεον ἐξαλαπάξαι.</p>
+   <input type="text" class="answer 130" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 130"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 130">τὸν δ᾽ ἀπαμειβόμενος προσέφη κρείων Ἀγαμέμνων:</p>
+   <input type="text" class="answer 131" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 131"> ---uu-uu-uu-uu--</p>
+   <p class="line 131">μὴ δ᾽ οὕτως ἀγαθός περ ἐὼν θεοείκελ᾽ Ἀχιλλεῦ</p>
+   <input type="text" class="answer 132" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 132"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 132">κλέπτε νόῳ, ἐπεὶ οὐ παρελεύσεαι οὐδέ με πείσεις.</p>
+   <input type="text" class="answer 133" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 133"> -uu---uu-uu-uu--</p>
+   <p class="line 133">ἦ ἐθέλεις ὄφρ᾽ αὐτὸς ἔχῃς γέρας, αὐτὰρ ἔμ᾽ αὔτως</p>
+   <input type="text" class="answer 134" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 134"> ---uu-uu-uu-uu--</p>
+   <p class="line 134">ἧσθαι δευόμενον, κέλεαι δέ με τήνδ᾽ ἀποδοῦναι;</p>
+   <input type="text" class="answer 135" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 135"> -----uu-uu-uu--</p>
+   <p class="line 135">ἀλλ᾽ εἰ μὲν δώσουσι γέρας μεγάθυμοι Ἀχαιοὶ</p>
+   <input type="text" class="answer 136" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 136"> ---uu-uu---uu--</p>
+   <p class="line 136">ἄρσαντες κατὰ θυμὸν ὅπως ἀντάξιον ἔσται:</p>
+   <input type="text" class="answer 137" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 137"> -uu---uu-uu-uu--</p>
+   <p class="line 137">εἰ δέ κε μὴ δώωσιν ἐγὼ δέ κεν αὐτὸς ἕλωμαι</p>
+   <input type="text" class="answer 138" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 138"> -uu---uu-uu-uu--</p>
+   <p class="line 138">ἢ τεὸν ἢ Αἴαντος ἰὼν γέρας, ἢ Ὀδυσῆος</p>
+   <input type="text" class="answer 139" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 139"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 139">ἄξω ἑλών: ὃ δέ κεν κεχολώσεται ὅν κεν ἵκωμαι.</p>
+   <input type="text" class="answer 140" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 140"> -----uu-uu-uu--</p>
+   <p class="line 140">ἀλλ᾽ ἤτοι μὲν ταῦτα μεταφρασόμεσθα καὶ αὖτις,</p>
+   <input type="text" class="answer 141" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 141"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 141">νῦν δ᾽ ἄγε νῆα μέλαιναν ἐρύσσομεν εἰς ἅλα δῖαν,</p>
+   <input type="text" class="answer 142" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 142"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 142">ἐν δ᾽ ἐρέτας ἐπιτηδὲς ἀγείρομεν, ἐς δ᾽ ἑκατόμβην</p>
+   <input type="text" class="answer 143" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 143"> -uu-----uu-uu--</p>
+   <p class="line 143">θείομεν, ἂν δ᾽ αὐτὴν Χρυσηΐδα καλλιπάρῃον</p>
+   <input type="text" class="answer 144" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 144"> -uu-uu-uu---uu--</p>
+   <p class="line 144">βήσομεν: εἷς δέ τις ἀρχὸς ἀνὴρ βουληφόρος ἔστω,</p>
+   <input type="text" class="answer 145" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 145"> -----uu---uu--</p>
+   <p class="line 145">ἢ Αἴας ἢ Ἰδομενεὺς ἢ δῖος Ὀδυσσεὺς</p>
+   <input type="text" class="answer 146" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 146"> -uu-uu-----uu--</p>
+   <p class="line 146">ἠὲ σὺ Πηλεΐδη πάντων ἐκπαγλότατ᾽ ἀνδρῶν,</p>
+   <input type="text" class="answer 147" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 147"> ---uu-uu-uu-uu--</p>
+   <p class="line 147">ὄφρ᾽ ἥμιν ἑκάεργον ἱλάσσεαι ἱερὰ ῥέξας.</p>
+   <input type="text" class="answer 148" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 148"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 148">τὸν δ᾽ ἄρ᾽ ὑπόδρα ἰδὼν προσέφη πόδας ὠκὺς Ἀχιλλεύς:</p>
+   <input type="text" class="answer 149" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 149"> -uu---uu-uu-uu--</p>
+   <p class="line 149">ὤ μοι ἀναιδείην ἐπιειμένε κερδαλεόφρον</p>
+   <input type="text" class="answer 150" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 150"> -----uu---uu--</p>
+   <p class="line 150">πῶς τίς τοι πρόφρων ἔπεσιν πείθηται Ἀχαιῶν</p>
+   <input type="text" class="answer 151" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 151"> -uu-uu---uu-uu--</p>
+   <p class="line 151">ἢ ὁδὸν ἐλθέμεναι ἢ ἀνδράσιν ἶφι μάχεσθαι;</p>
+   <input type="text" class="answer 152" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 152"> -uu---uu-uu----</p>
+   <p class="line 152">οὐ γὰρ ἐγὼ Τρώων ἕνεκ᾽ ἤλυθον αἰχμητάων</p>
+   <input type="text" class="answer 153" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 153"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 153">δεῦρο μαχησόμενος, ἐπεὶ οὔ τί μοι αἴτιοί εἰσιν:</p>
+   <input type="text" class="answer 154" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 154"> ---uu---uu-uu--</p>
+   <p class="line 154">οὐ γὰρ πώποτ᾽ ἐμὰς βοῦς ἤλασαν οὐδὲ μὲν ἵππους,</p>
+   <input type="text" class="answer 155" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 155"> -uu---uu-uu-uu--</p>
+   <p class="line 155">οὐδέ ποτ᾽ ἐν Φθίῃ ἐριβώλακι βωτιανείρῃ</p>
+   <input type="text" class="answer 156" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 156"> -uu---uu-uu-uu--</p>
+   <p class="line 156">καρπὸν ἐδηλήσαντ᾽, ἐπεὶ ἦ μάλα πολλὰ μεταξὺ</p>
+   <input type="text" class="answer 157" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 157"> -uu-uu-uu-uu----</p>
+   <p class="line 157">οὔρεά τε σκιόεντα θάλασσά τε ἠχήεσσα:</p>
+   <input type="text" class="answer 158" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 158"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 158">ἀλλὰ σοὶ ὦ μέγ᾽ ἀναιδὲς ἅμ᾽ ἑσπόμεθ᾽ ὄφρα σὺ χαίρῃς,</p>
+   <input type="text" class="answer 159" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 159"> ---uu-uu---uu--</p>
+   <p class="line 159">τιμὴν ἀρνύμενοι Μενελάῳ σοί τε κυνῶπα</p>
+   <input type="text" class="answer 160" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 160"> -----uu-uu-uu--</p>
+   <p class="line 160">πρὸς Τρώων: τῶν οὔ τι μετατρέπῃ οὐδ᾽ ἀλεγίζεις:</p>
+   <input type="text" class="answer 161" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 161"> ---uu-uu---uu--</p>
+   <p class="line 161">καὶ δή μοι γέρας αὐτὸς ἀφαιρήσεσθαι ἀπειλεῖς,</p>
+   <input type="text" class="answer 162" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 162"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 162">ᾧ ἔπι πολλὰ μόγησα, δόσαν δέ μοι υἷες Ἀχαιῶν.</p>
+   <input type="text" class="answer 163" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 163"> ---uu-uu-uu-uu--</p>
+   <p class="line 163">οὐ μὲν σοί ποτε ἶσον ἔχω γέρας ὁππότ᾽ Ἀχαιοὶ</p>
+   <input type="text" class="answer 164" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 164"> -------uu-uu--</p>
+   <p class="line 164">Τρώων ἐκπέρσωσ᾽ εὖ ναιόμενον πτολίεθρον:</p>
+   <input type="text" class="answer 165" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 165"> -uu---uu---uu--</p>
+   <p class="line 165">ἀλλὰ τὸ μὲν πλεῖον πολυάϊκος πολέμοιο</p>
+   <input type="text" class="answer 166" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 166"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 166">χεῖρες ἐμαὶ διέπουσ᾽: ἀτὰρ ἤν ποτε δασμὸς ἵκηται,</p>
+   <input type="text" class="answer 167" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 167"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 167">σοὶ τὸ γέρας πολὺ μεῖζον, ἐγὼ δ᾽ ὀλίγον τε φίλον τε</p>
+   <input type="text" class="answer 168" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 168"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 168">ἔρχομ᾽ ἔχων ἐπὶ νῆας, ἐπεί κε κάμω πολεμίζων.</p>
+   <input type="text" class="answer 169" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 169"> -----uu-uu-uu--</p>
+   <p class="line 169">νῦν δ᾽ εἶμι Φθίην δ᾽, ἐπεὶ ἦ πολὺ φέρτερόν ἐστιν</p>
+   <input type="text" class="answer 170" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 170"> -uu---uu-uu-uu--</p>
+   <p class="line 170">οἴκαδ᾽ ἴμεν σὺν νηυσὶ κορωνίσιν, οὐδέ σ᾽ ὀΐω</p>
+   <input type="text" class="answer 171" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 171"> -uu-uu-uu---uu--</p>
+   <p class="line 171">ἐνθάδ᾽ ἄτιμος ἐὼν ἄφενος καὶ πλοῦτον ἀφύξειν.</p>
+   <input type="text" class="answer 172" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 172"> ---uu-uu---uu--</p>
+   <p class="line 172">τὸν δ᾽ ἠμείβετ᾽ ἔπειτα ἄναξ ἀνδρῶν Ἀγαμέμνων:</p>
+   <input type="text" class="answer 173" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 173"> -uu---uu-uu-uu--</p>
+   <p class="line 173">φεῦγε μάλ᾽ εἴ τοι θυμὸς ἐπέσσυται, οὐδέ σ᾽ ἔγωγε</p>
+   <input type="text" class="answer 174" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 174"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 174">λίσσομαι εἵνεκ᾽ ἐμεῖο μένειν: πάρ᾽ ἔμοιγε καὶ ἄλλοι</p>
+   <input type="text" class="answer 175" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 175"> -uu---uu-uu-uu--</p>
+   <p class="line 175">οἵ κέ με τιμήσουσι, μάλιστα δὲ μητίετα Ζεύς.</p>
+   <input type="text" class="answer 176" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 176"> ---uu-uu-uu-uu--</p>
+   <p class="line 176">ἔχθιστος δέ μοί ἐσσι διοτρεφέων βασιλήων:</p>
+   <input type="text" class="answer 177" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 177"> ---uu-uu-uu-uu--</p>
+   <p class="line 177">αἰεὶ γάρ τοι ἔρις τε φίλη πόλεμοί τε μάχαι τε:</p>
+   <input type="text" class="answer 178" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 178"> -uu-uu-uu---uu--</p>
+   <p class="line 178">εἰ μάλα καρτερός ἐσσι, θεός που σοὶ τό γ᾽ ἔδωκεν:</p>
+   <input type="text" class="answer 179" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 179"> -uu---uu---uu--</p>
+   <p class="line 179">οἴκαδ᾽ ἰὼν σὺν νηυσί τε σῇς καὶ σοῖς ἑτάροισι</p>
+   <input type="text" class="answer 180" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 180"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 180">Μυρμιδόνεσσιν ἄνασσε, σέθεν δ᾽ ἐγὼ οὐκ ἀλεγίζω,</p>
+   <input type="text" class="answer 181" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 181"> -uu-uu-uu---uu--</p>
+   <p class="line 181">οὐδ᾽ ὄθομαι κοτέοντος: ἀπειλήσω δέ τοι ὧδε:</p>
+   <input type="text" class="answer 182" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 182"> -uu-----uu-uu--</p>
+   <p class="line 182">ὡς ἔμ᾽ ἀφαιρεῖται Χρυσηΐδα Φοῖβος Ἀπόλλων,</p>
+   <input type="text" class="answer 183" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 183"> -uu---uu-uu-uu--</p>
+   <p class="line 183">τὴν μὲν ἐγὼ σὺν νηΐ τ᾽ ἐμῇ καὶ ἐμοῖς ἑτάροισι</p>
+   <input type="text" class="answer 184" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 184"> -uu-uu---uu-uu--</p>
+   <p class="line 184">πέμψω, ἐγὼ δέ κ᾽ ἄγω Βρισηΐδα καλλιπάρῃον</p>
+   <input type="text" class="answer 185" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 185"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 185">αὐτὸς ἰὼν κλισίην δὲ τὸ σὸν γέρας ὄφρ᾽ ἐῢ εἰδῇς</p>
+   <input type="text" class="answer 186" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 186"> ---uu-uu-uu-uu--</p>
+   <p class="line 186">ὅσσον φέρτερός εἰμι σέθεν, στυγέῃ δὲ καὶ ἄλλος</p>
+   <input type="text" class="answer 187" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 187"> -uu---uu---uu--</p>
+   <p class="line 187">ἶσον ἐμοὶ φάσθαι καὶ ὁμοιωθήμεναι ἄντην.</p>
+   <input type="text" class="answer 188" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 188"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 188">ὣς φάτο: Πηλεΐωνι δ᾽ ἄχος γένετ᾽, ἐν δέ οἱ ἦτορ</p>
+   <input type="text" class="answer 189" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 189"> ---uu-uu-uu----</p>
+   <p class="line 189">στήθεσσιν λασίοισι διάνδιχα μερμήριξεν,</p>
+   <input type="text" class="answer 190" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 190"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 190">ἢ ὅ γε φάσγανον ὀξὺ ἐρυσσάμενος παρὰ μηροῦ</p>
+   <input type="text" class="answer 191" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 191"> -uu---uu-uu-uu--</p>
+   <p class="line 191">τοὺς μὲν ἀναστήσειεν, ὃ δ᾽ Ἀτρεΐδην ἐναρίζοι,</p>
+   <input type="text" class="answer 192" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 192"> -uu---uu---uu--</p>
+   <p class="line 192">ἦε χόλον παύσειεν ἐρητύσειέ τε θυμόν.</p>
+   <input type="text" class="answer 193" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 193"> -uu---uu-uu-uu--</p>
+   <p class="line 193">ἧος ὃ ταῦθ᾽ ὥρμαινε κατὰ φρένα καὶ κατὰ θυμόν,</p>
+   <input type="text" class="answer 194" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 194"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 194">ἕλκετο δ᾽ ἐκ κολεοῖο μέγα ξίφος, ἦλθε δ᾽ Ἀθήνη</p>
+   <input type="text" class="answer 195" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 195"> -uu-uu-uu---uu--</p>
+   <p class="line 195">οὐρανόθεν: πρὸ γὰρ ἧκε θεὰ λευκώλενος Ἥρη</p>
+   <input type="text" class="answer 196" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 196"> -uu---uu-uu-uu--</p>
+   <p class="line 196">ἄμφω ὁμῶς θυμῷ φιλέουσά τε κηδομένη τε:</p>
+   <input type="text" class="answer 197" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 197"> -uu---uu-uu-uu--</p>
+   <p class="line 197">στῆ δ᾽ ὄπιθεν, ξανθῆς δὲ κόμης ἕλε Πηλεΐωνα</p>
+   <input type="text" class="answer 198" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 198"> ---uu-----uu--</p>
+   <p class="line 198">οἴῳ φαινομένη: τῶν δ᾽ ἄλλων οὔ τις ὁρᾶτο:</p>
+   <input type="text" class="answer 199" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 199"> ---uu-uu-uu-uu--</p>
+   <p class="line 199">θάμβησεν δ᾽ Ἀχιλεύς, μετὰ δ᾽ ἐτράπετ᾽, αὐτίκα δ᾽ ἔγνω</p>
+   <input type="text" class="answer 200" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 200"> -uu-----uu-uu--</p>
+   <p class="line 200">Παλλάδ᾽ Ἀθηναίην: δεινὼ δέ οἱ ὄσσε φάανθεν:</p>
+   <input type="text" class="answer 201" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 201"> -----uu-uu-uu--</p>
+   <p class="line 201">καί μιν φωνήσας ἔπεα πτερόεντα προσηύδα:</p>
+   <input type="text" class="answer 202" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 202"> ---uu-uu-uu----</p>
+   <p class="line 202">τίπτ᾽ αὖτ᾽ αἰγιόχοιο Διὸς τέκος εἰλήλουθας;</p>
+   <input type="text" class="answer 203" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 203"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 203">ἦ ἵνα ὕβριν ἴδῃ Ἀγαμέμνονος Ἀτρεΐδαο;</p>
+   <input type="text" class="answer 204" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 204"> ---uu-uu-uu-uu--</p>
+   <p class="line 204">ἀλλ᾽ ἔκ τοι ἐρέω, τὸ δὲ καὶ τελέεσθαι ὀΐω:</p>
+   <input type="text" class="answer 205" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 205"> -uu---uu-uu-uu--</p>
+   <p class="line 205">ᾗς ὑπεροπλίῃσι τάχ᾽ ἄν ποτε θυμὸν ὀλέσσῃ.</p>
+   <input type="text" class="answer 206" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 206"> ---uu-uu---uu--</p>
+   <p class="line 206">τὸν δ᾽ αὖτε προσέειπε θεὰ γλαυκῶπις Ἀθήνη:</p>
+   <input type="text" class="answer 207" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 207"> -uu---uu-uu-uu--</p>
+   <p class="line 207">ἦλθον ἐγὼ παύσουσα τὸ σὸν μένος, αἴ κε πίθηαι,</p>
+   <input type="text" class="answer 208" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 208"> -uu-uu-uu---uu--</p>
+   <p class="line 208">οὐρανόθεν: πρὸ δέ μ᾽ ἧκε θεὰ λευκώλενος Ἥρη</p>
+   <input type="text" class="answer 209" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 209"> -uu---uu-uu-uu--</p>
+   <p class="line 209">ἄμφω ὁμῶς θυμῷ φιλέουσά τε κηδομένη τε:</p>
+   <input type="text" class="answer 210" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 210"> -uu-uu---uu-uu--</p>
+   <p class="line 210">ἀλλ᾽ ἄγε λῆγ᾽ ἔριδος, μηδὲ ξίφος ἕλκεο χειρί:</p>
+   <input type="text" class="answer 211" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 211"> ---uu-uu-uu-uu--</p>
+   <p class="line 211">ἀλλ᾽ ἤτοι ἔπεσιν μὲν ὀνείδισον ὡς ἔσεταί περ:</p>
+   <input type="text" class="answer 212" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 212"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 212">ὧδε γὰρ ἐξερέω, τὸ δὲ καὶ τετελεσμένον ἔσται:</p>
+   <input type="text" class="answer 213" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 213"> -uu---uu-uu-uu--</p>
+   <p class="line 213">καί ποτέ τοι τρὶς τόσσα παρέσσεται ἀγλαὰ δῶρα</p>
+   <input type="text" class="answer 214" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 214"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 214">ὕβριος εἵνεκα τῆσδε: σὺ δ᾽ ἴσχεο, πείθεο δ᾽ ἡμῖν.</p>
+   <input type="text" class="answer 215" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 215"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 215">τὴν δ᾽ ἀπαμειβόμενος προσέφη πόδας ὠκὺς Ἀχιλλεύς:</p>
+   <input type="text" class="answer 216" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 216"> ---uu-uu-uu----</p>
+   <p class="line 216">χρὴ μὲν σφωΐτερόν γε θεὰ ἔπος εἰρύσσασθαι</p>
+   <input type="text" class="answer 217" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 217"> -uu---uu-uu-uu--</p>
+   <p class="line 217">καὶ μάλα περ θυμῷ κεχολωμένον: ὧς γὰρ ἄμεινον:</p>
+   <input type="text" class="answer 218" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 218"> -uu-uu---uu-uu--</p>
+   <p class="line 218">ὅς κε θεοῖς ἐπιπείθηται μάλα τ᾽ ἔκλυον αὐτοῦ.</p>
+   <input type="text" class="answer 219" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 219"> -uu-uu---uu-uu--</p>
+   <p class="line 219">ἦ καὶ ἐπ᾽ ἀργυρέῃ κώπῃ σχέθε χεῖρα βαρεῖαν,</p>
+   <input type="text" class="answer 220" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 220"> ---uu-uu-uu-uu--</p>
+   <p class="line 220">ἂψ δ᾽ ἐς κουλεὸν ὦσε μέγα ξίφος, οὐδ᾽ ἀπίθησε</p>
+   <input type="text" class="answer 221" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 221"> -uu-------uu--</p>
+   <p class="line 221">μύθῳ Ἀθηναίης: ἣ δ᾽ Οὔλυμπον δὲ βεβήκει</p>
+   <input type="text" class="answer 222" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 222"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 222">δώματ᾽ ἐς αἰγιόχοιο Διὸς μετὰ δαίμονας ἄλλους.</p>
+   <input type="text" class="answer 223" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 223"> -uu---uu---uu--</p>
+   <p class="line 223">Πηλεΐδης δ᾽ ἐξαῦτις ἀταρτηροῖς ἐπέεσσιν</p>
+   <input type="text" class="answer 224" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 224"> -uu-uu-uu---uu--</p>
+   <p class="line 224">Ἀτρεΐδην προσέειπε, καὶ οὔ πω λῆγε χόλοιο:</p>
+   <input type="text" class="answer 225" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 225"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 225">οἰνοβαρές, κυνὸς ὄμματ᾽ ἔχων, κραδίην δ᾽ ἐλάφοιο,</p>
+   <input type="text" class="answer 226" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 226"> -uu-uu-uu------</p>
+   <p class="line 226">οὔτέ ποτ᾽ ἐς πόλεμον ἅμα λαῷ θωρηχθῆναι</p>
+   <input type="text" class="answer 227" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 227"> -uu-uu-uu---uu--</p>
+   <p class="line 227">οὔτε λόχον δ᾽ ἰέναι σὺν ἀριστήεσσιν Ἀχαιῶν</p>
+   <input type="text" class="answer 228" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 228"> -----uu---uu--</p>
+   <p class="line 228">τέτληκας θυμῷ: τὸ δέ τοι κὴρ εἴδεται εἶναι.</p>
+   <input type="text" class="answer 229" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 229"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 229">ἦ πολὺ λώϊόν ἐστι κατὰ στρατὸν εὐρὺν Ἀχαιῶν</p>
+   <input type="text" class="answer 230" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 230"> -uu-----uu-uu--</p>
+   <p class="line 230">δῶρ᾽ ἀποαιρεῖσθαι ὅς τις σέθεν ἀντίον εἴπῃ:</p>
+   <input type="text" class="answer 231" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 231"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 231">δημοβόρος βασιλεὺς ἐπεὶ οὐτιδανοῖσιν ἀνάσσεις:</p>
+   <input type="text" class="answer 232" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 232"> -uu-uu---uu----</p>
+   <p class="line 232">ἦ γὰρ ἂν Ἀτρεΐδη νῦν ὕστατα λωβήσαιο.</p>
+   <input type="text" class="answer 233" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 233"> ---uu-uu-uu-uu--</p>
+   <p class="line 233">ἀλλ᾽ ἔκ τοι ἐρέω καὶ ἐπὶ μέγαν ὅρκον ὀμοῦμαι:</p>
+   <input type="text" class="answer 234" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 234"> -uu---uu-uu-uu--</p>
+   <p class="line 234">ναὶ μὰ τόδε σκῆπτρον, τὸ μὲν οὔ ποτε φύλλα καὶ ὄζους</p>
+   <input type="text" class="answer 235" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 235"> -uu---uu-uu-uu--</p>
+   <p class="line 235">φύσει, ἐπεὶ δὴ πρῶτα τομὴν ἐν ὄρεσσι λέλοιπεν,</p>
+   <input type="text" class="answer 236" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 236"> -uu---uu-uu-uu--</p>
+   <p class="line 236">οὐδ᾽ ἀναθηλήσει: περὶ γάρ ῥά ἑ χαλκὸς ἔλεψε</p>
+   <input type="text" class="answer 237" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 237"> -uu-----uu-uu--</p>
+   <p class="line 237">φύλλά τε καὶ φλοιόν: νῦν αὖτέ μιν υἷες Ἀχαιῶν</p>
+   <input type="text" class="answer 238" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 238"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 238">ἐν παλάμῃς φορέουσι δικασπόλοι, οἵ τε θέμιστας</p>
+   <input type="text" class="answer 239" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 239"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 239">πρὸς Διὸς εἰρύαται: ὃ δέ τοι μέγας ἔσσεται ὅρκος:</p>
+   <input type="text" class="answer 240" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 240"> -uu---uu-uu-uu--</p>
+   <p class="line 240">ἦ ποτ᾽ Ἀχιλλῆος ποθὴ ἵξεται υἷας Ἀχαιῶν</p>
+   <input type="text" class="answer 241" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 241"> ---uu-uu-uu-uu--</p>
+   <p class="line 241">σύμπαντας: τότε δ᾽ οὔ τι δυνήσεαι ἀχνύμενός περ</p>
+   <input type="text" class="answer 242" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 242"> -----uu-uu-uu--</p>
+   <p class="line 242">χραισμεῖν, εὖτ᾽ ἂν πολλοὶ ὑφ᾽ Ἕκτορος ἀνδροφόνοιο</p>
+   <input type="text" class="answer 243" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 243"> -----uu-uu-uu--</p>
+   <p class="line 243">θνήσκοντες πίπτωσι: σὺ δ᾽ ἔνδοθι θυμὸν ἀμύξεις</p>
+   <input type="text" class="answer 244" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 244"> -uu-uu-uu---uu--</p>
+   <p class="line 244">χωόμενος ὅ τ᾽ ἄριστον Ἀχαιῶν οὐδὲν ἔτισας.</p>
+   <input type="text" class="answer 245" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 245"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 245">ὣς φάτο Πηλεΐδης, ποτὶ δὲ σκῆπτρον βάλε γαίῃ</p>
+   <input type="text" class="answer 246" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 246"> -----uu-uu-uu--</p>
+   <p class="line 246">χρυσείοις ἥλοισι πεπαρμένον, ἕζετο δ᾽ αὐτός:</p>
+   <input type="text" class="answer 247" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 247"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 247">Ἀτρεΐδης δ᾽ ἑτέρωθεν ἐμήνιε: τοῖσι δὲ Νέστωρ</p>
+   <input type="text" class="answer 248" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 248"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 248">ἡδυεπὴς ἀνόρουσε λιγὺς Πυλίων ἀγορητής,</p>
+   <input type="text" class="answer 249" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 249"> -uu---uu---uu--</p>
+   <p class="line 249">τοῦ καὶ ἀπὸ γλώσσης μέλιτος γλυκίων ῥέεν αὐδή:</p>
+   <input type="text" class="answer 250" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 250"> ---uu-uu-uu----</p>
+   <p class="line 250">τῷ δ᾽ ἤδη δύο μὲν γενεαὶ μερόπων ἀνθρώπων</p>
+   <input type="text" class="answer 251" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 251"> -uu---uu-uu-uu--</p>
+   <p class="line 251">ἐφθίαθ᾽, οἵ οἱ πρόσθεν ἅμα τράφεν ἠδ᾽ ἐγένοντο</p>
+   <input type="text" class="answer 252" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 252"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 252">ἐν Πύλῳ ἠγαθέῃ, μετὰ δὲ τριτάτοισιν ἄνασσεν:</p>
+   <input type="text" class="answer 253" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 253"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 253">ὅ σφιν ἐὺ φρονέων ἀγορήσατο καὶ μετέειπεν:</p>
+   <input type="text" class="answer 254" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 254"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 254">ὦ πόποι ἦ μέγα πένθος Ἀχαιΐδα γαῖαν ἱκάνει:</p>
+   <input type="text" class="answer 255" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 255"> -----uu-uu-uu--</p>
+   <p class="line 255">ἦ κεν γηθήσαι Πρίαμος Πριάμοιό τε παῖδες</p>
+   <input type="text" class="answer 256" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 256"> -----uu-uu-uu--</p>
+   <p class="line 256">ἄλλοι τε Τρῶες μέγα κεν κεχαροίατο θυμῷ</p>
+   <input type="text" class="answer 257" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 257"> ---uu-uu-uu-uu--</p>
+   <p class="line 257">εἰ σφῶϊν τάδε πάντα πυθοίατο μαρναμένοιϊν,</p>
+   <input type="text" class="answer 258" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 258"> -uu---uu-uu-uu--</p>
+   <p class="line 258">οἳ περὶ μὲν βουλὴν Δαναῶν, περὶ δ᾽ ἐστὲ μάχεσθαι.</p>
+   <input type="text" class="answer 259" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 259"> -uu---uu-uu-uu--</p>
+   <p class="line 259">ἀλλὰ πίθεσθ᾽: ἄμφω δὲ νεωτέρω ἐστὸν ἐμεῖο:</p>
+   <input type="text" class="answer 260" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 260"> ---uu-uu-uu-uu--</p>
+   <p class="line 260">ἤδη γάρ ποτ᾽ ἐγὼ καὶ ἀρείοσιν ἠέ περ ὑμῖν</p>
+   <input type="text" class="answer 261" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 261"> -uu---uu-uu-uu--</p>
+   <p class="line 261">ἀνδράσιν ὡμίλησα, καὶ οὔ ποτέ μ᾽ οἵ γ᾽ ἀθέριζον.</p>
+   <input type="text" class="answer 262" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 262"> -----uu-uu-uu--</p>
+   <p class="line 262">οὐ γάρ πω τοίους ἴδον ἀνέρας οὐδὲ ἴδωμαι,</p>
+   <input type="text" class="answer 263" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 263"> ---uu-uu-uu-uu--</p>
+   <p class="line 263">οἷον Πειρίθοόν τε Δρύαντά τε ποιμένα λαῶν</p>
+   <input type="text" class="answer 264" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 264"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 264">Καινέα τ᾽ Ἐξάδιόν τε καὶ ἀντίθεον Πολύφημον</p>
+   <input type="text" class="answer 265" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 265"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 265">Θησέα τ᾽ Αἰγεΐδην, ἐπιείκελον ἀθανάτοισιν:</p>
+   <input type="text" class="answer 266" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 266"> -----uu-uu-uu--</p>
+   <p class="line 266">κάρτιστοι δὴ κεῖνοι ἐπιχθονίων τράφεν ἀνδρῶν:</p>
+   <input type="text" class="answer 267" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 267"> ---uu-----uu--</p>
+   <p class="line 267">κάρτιστοι μὲν ἔσαν καὶ καρτίστοις ἐμάχοντο</p>
+   <input type="text" class="answer 268" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 268"> -uu---uu---uu--</p>
+   <p class="line 268">φηρσὶν ὀρεσκῴοισι καὶ ἐκπάγλως ἀπόλεσσαν.</p>
+   <input type="text" class="answer 269" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 269"> ---uu-uu-uu-uu--</p>
+   <p class="line 269">καὶ μὲν τοῖσιν ἐγὼ μεθομίλεον ἐκ Πύλου ἐλθὼν</p>
+   <input type="text" class="answer 270" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 270"> -uu-uu---uu-uu--</p>
+   <p class="line 270">τηλόθεν ἐξ ἀπίης γαίης: καλέσαντο γὰρ αὐτοί:</p>
+   <input type="text" class="answer 271" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 271"> -uu-uu-uu---uu--</p>
+   <p class="line 271">καὶ μαχόμην κατ᾽ ἔμ᾽ αὐτὸν ἐγώ: κείνοισι δ᾽ ἂν οὔ τις</p>
+   <input type="text" class="answer 272" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 272"> ---uu-uu-uu-uu--</p>
+   <p class="line 272">τῶν οἳ νῦν βροτοί εἰσιν ἐπιχθόνιοι μαχέοιτο:</p>
+   <input type="text" class="answer 273" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 273"> -----uu---uu--</p>
+   <p class="line 273">καὶ μέν μευ βουλέων ξύνιεν πείθοντό τε μύθῳ:</p>
+   <input type="text" class="answer 274" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 274"> -uu-uu-uu---uu--</p>
+   <p class="line 274">ἀλλὰ πίθεσθε καὶ ὔμμες, ἐπεὶ πείθεσθαι ἄμεινον:</p>
+   <input type="text" class="answer 275" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 275"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 275">μήτε σὺ τόνδ᾽ ἀγαθός περ ἐὼν ἀποαίρεο κούρην,</p>
+   <input type="text" class="answer 276" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 276"> -uu---uu-uu-uu--</p>
+   <p class="line 276">ἀλλ᾽ ἔα ὥς οἱ πρῶτα δόσαν γέρας υἷες Ἀχαιῶν:</p>
+   <input type="text" class="answer 277" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 277"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 277">μήτε σὺ Πηλεΐδη θελ᾽ ἐριζέμεναι βασιλῆϊ</p>
+   <input type="text" class="answer 278" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 278"> -uu-uu-uu---uu--</p>
+   <p class="line 278">ἀντιβίην, ἐπεὶ οὔ ποθ᾽ ὁμοίης ἔμμορε τιμῆς</p>
+   <input type="text" class="answer 279" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 279"> ---uu-----uu--</p>
+   <p class="line 279">σκηπτοῦχος βασιλεύς, ᾧ τε Ζεὺς κῦδος ἔδωκεν.</p>
+   <input type="text" class="answer 280" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 280"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 280">εἰ δὲ σὺ καρτερός ἐσσι θεὰ δέ σε γείνατο μήτηρ,</p>
+   <input type="text" class="answer 281" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 281"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 281">ἀλλ᾽ ὅ γε φέρτερός ἐστιν ἐπεὶ πλεόνεσσιν ἀνάσσει.</p>
+   <input type="text" class="answer 282" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 282"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 282">Ἀτρεΐδη σὺ δὲ παῦε τεὸν μένος: αὐτὰρ ἔγωγε</p>
+   <input type="text" class="answer 283" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 283"> -uu---uu-uu-uu--</p>
+   <p class="line 283">λίσσομ᾽ Ἀχιλλῆϊ μεθέμεν χόλον, ὃς μέγα πᾶσιν</p>
+   <input type="text" class="answer 284" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 284"> -uu---uu-uu-uu--</p>
+   <p class="line 284">ἕρκος Ἀχαιοῖσιν πέλεται πολέμοιο κακοῖο.</p>
+   <input type="text" class="answer 285" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 285"> -uu-uu-uu---uu--</p>
+   <p class="line 285">τὸν δ᾽ ἀπαμειβόμενος προσέφη κρείων Ἀγαμέμνων:</p>
+   <input type="text" class="answer 286" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 286"> ---uu-uu-uu-uu--</p>
+   <p class="line 286">ναὶ δὴ ταῦτά γε πάντα γέρον κατὰ μοῖραν ἔειπες:</p>
+   <input type="text" class="answer 287" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 287"> -uu-uu-uu---uu--</p>
+   <p class="line 287">ἀλλ᾽ ὅδ᾽ ἀνὴρ ἐθέλει περὶ πάντων ἔμμεναι ἄλλων,</p>
+   <input type="text" class="answer 288" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 288"> ---uu-uu---uu--</p>
+   <p class="line 288">πάντων μὲν κρατέειν ἐθέλει, πάντεσσι δ᾽ ἀνάσσειν,</p>
+   <input type="text" class="answer 289" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 289"> -uu---uu---uu--</p>
+   <p class="line 289">πᾶσι δὲ σημαίνειν, ἅ τιν᾽ οὐ πείσεσθαι ὀΐω:</p>
+   <input type="text" class="answer 290" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 290"> -uu---uu-uu-uu--</p>
+   <p class="line 290">εἰ δέ μιν αἰχμητὴν ἔθεσαν θεοὶ αἰὲν ἐόντες</p>
+   <input type="text" class="answer 291" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 291"> -uu-uu-uu-uu----</p>
+   <p class="line 291">τοὔνεκά οἱ προθέουσιν ὀνείδεα μυθήσασθαι;</p>
+   <input type="text" class="answer 292" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 292"> -uu-----uu-uu--</p>
+   <p class="line 292">τὸν δ᾽ ἄρ᾽ ὑποβλήδην ἠμείβετο δῖος Ἀχιλλεύς:</p>
+   <input type="text" class="answer 293" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 293"> -----uu-uu-uu--</p>
+   <p class="line 293">ἦ γάρ κεν δειλός τε καὶ οὐτιδανὸς καλεοίμην</p>
+   <input type="text" class="answer 294" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 294"> -----uu-uu-uu--</p>
+   <p class="line 294">εἰ δὴ σοὶ πᾶν ἔργον ὑπείξομαι ὅττί κεν εἴπῃς:</p>
+   <input type="text" class="answer 295" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 295"> -----uu-uu-uu--</p>
+   <p class="line 295">ἄλλοισιν δὴ ταῦτ᾽ ἐπιτέλλεο, μὴ γὰρ ἔμοιγε</p>
+   <input type="text" class="answer 296" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 296"> ---uu-uu---uu--</p>
+   <p class="line 296">σήμαιν᾽: οὐ γὰρ ἔγωγ᾽ ἔτι σοὶ πείσεσθαι ὀΐω.</p>
+   <input type="text" class="answer 297" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 297"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 297">ἄλλο δέ τοι ἐρέω, σὺ δ᾽ ἐνὶ φρεσὶ βάλλεο σῇσι:</p>
+   <input type="text" class="answer 298" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 298"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 298">χερσὶ μὲν οὔ τοι ἔγωγε μαχήσομαι εἵνεκα κούρης</p>
+   <input type="text" class="answer 299" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 299"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 299">οὔτε σοὶ οὔτέ τῳ ἄλλῳ, ἐπεί μ᾽ ἀφέλεσθέ γε δόντες:</p>
+   <input type="text" class="answer 300" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 300"> ---uu-uu-uu-uu--</p>
+   <p class="line 300">τῶν δ᾽ ἄλλων ἅ μοί ἐστι θοῇ παρὰ νηῒ μελαίνῃ</p>
+   <input type="text" class="answer 301" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 301"> ---uu-uu-uu-uu--</p>
+   <p class="line 301">τῶν οὐκ ἄν τι φέροις ἀνελὼν ἀέκοντος ἐμεῖο:</p>
+   <input type="text" class="answer 302" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 302"> -uu---uu---uu--</p>
+   <p class="line 302">εἰ δ᾽ ἄγε μὴν πείρησαι ἵνα γνώωσι καὶ οἵδε:</p>
+   <input type="text" class="answer 303" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 303"> -uu-uu-uu---uu--</p>
+   <p class="line 303">αἶψά τοι αἷμα κελαινὸν ἐρωήσει περὶ δουρί.</p>
+   <input type="text" class="answer 304" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 304"> ---uu-uu-uu-uu--</p>
+   <p class="line 304">ὣς τώ γ᾽ ἀντιβίοισι μαχεσσαμένω ἐπέεσσιν</p>
+   <input type="text" class="answer 305" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 305"> -----uu-uu-uu--</p>
+   <p class="line 305">ἀνστήτην, λῦσαν δ᾽ ἀγορὴν παρὰ νηυσὶν Ἀχαιῶν:</p>
+   <input type="text" class="answer 306" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 306"> -uu-uu-uu---uu--</p>
+   <p class="line 306">Πηλεΐδης μὲν ἐπὶ κλισίας καὶ νῆας ἐΐσας</p>
+   <input type="text" class="answer 307" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 307"> -uu-uu-uu---uu--</p>
+   <p class="line 307">ἤϊε σύν τε Μενοιτιάδῃ καὶ οἷς ἑτάροισιν:</p>
+   <input type="text" class="answer 308" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 308"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 308">Ἀτρεΐδης δ᾽ ἄρα νῆα θοὴν ἅλα δὲ προέρυσσεν,</p>
+   <input type="text" class="answer 309" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 309"> -uu---uu-uu-uu--</p>
+   <p class="line 309">ἐν δ᾽ ἐρέτας ἔκρινεν ἐείκοσιν, ἐς δ᾽ ἑκατόμβην</p>
+   <input type="text" class="answer 310" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 310"> -uu-uu---uu-uu--</p>
+   <p class="line 310">βῆσε θεῷ, ἀνὰ δὲ Χρυσηΐδα καλλιπάρῃον</p>
+   <input type="text" class="answer 311" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 311"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 311">εἷσεν ἄγων: ἐν δ᾽ ἀρχὸς ἔβη πολύμητις Ὀδυσσεύς.</p>
+   <input type="text" class="answer 312" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 312"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 312">οἳ μὲν ἔπειτ᾽ ἀναβάντες ἐπέπλεον ὑγρὰ κέλευθα,</p>
+   <input type="text" class="answer 313" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 313"> ---uu-uu---uu--</p>
+   <p class="line 313">λαοὺς δ᾽ Ἀτρεΐδης ἀπολυμαίνεσθαι ἄνωγεν:</p>
+   <input type="text" class="answer 314" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 314"> -uu---uu-uu-uu--</p>
+   <p class="line 314">οἳ δ᾽ ἀπελυμαίνοντο καὶ εἰς ἅλα λύματα βάλλον,</p>
+   <input type="text" class="answer 315" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 315"> -----uu---uu--</p>
+   <p class="line 315">ἕρδον δ᾽ Ἀπόλλωνι τεληέσσας ἑκατόμβας</p>
+   <input type="text" class="answer 316" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 316"> -----uu-uu-uu--</p>
+   <p class="line 316">ταύρων ἠδ᾽ αἰγῶν παρὰ θῖν᾽ ἁλὸς ἀτρυγέτοιο:</p>
+   <input type="text" class="answer 317" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 317"> ---uu-uu-uu-uu--</p>
+   <p class="line 317">κνίση δ᾽ οὐρανὸν ἷκεν ἑλισσομένη περὶ καπνῷ.</p>
+   <input type="text" class="answer 318" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 318"> ---uu-uu-uu-uu--</p>
+   <p class="line 318">ὣς οἳ μὲν τὰ πένοντο κατὰ στρατόν: οὐδ᾽ Ἀγαμέμνων</p>
+   <input type="text" class="answer 319" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 319"> -uu---uu---uu--</p>
+   <p class="line 319">λῆγ᾽ ἔριδος τὴν πρῶτον ἐπηπείλησ᾽ Ἀχιλῆϊ,</p>
+   <input type="text" class="answer 320" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 320"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 320">ἀλλ᾽ ὅ γε Ταλθύβιόν τε καὶ Εὐρυβάτην προσέειπε,</p>
+   <input type="text" class="answer 321" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 321"> -uu---uu---uu--</p>
+   <p class="line 321">τώ οἱ ἔσαν κήρυκε καὶ ὀτρηρὼ θεράποντε:</p>
+   <input type="text" class="answer 322" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 322"> ---uu---uu-uu--</p>
+   <p class="line 322">ἔρχεσθον κλισίην Πηληϊάδεω Ἀχιλῆος:</p>
+   <input type="text" class="answer 323" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 323"> -uu-uu---uu-uu--</p>
+   <p class="line 323">χειρὸς ἑλόντ᾽ ἀγέμεν Βρισηΐδα καλλιπάρῃον:</p>
+   <input type="text" class="answer 324" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 324"> -uu---uu-uu-uu--</p>
+   <p class="line 324">εἰ δέ κε μὴ δώῃσιν ἐγὼ δέ κεν αὐτὸς ἕλωμαι</p>
+   <input type="text" class="answer 325" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 325"> ---uu-uu---uu--</p>
+   <p class="line 325">ἐλθὼν σὺν πλεόνεσσι: τό οἱ καὶ ῥίγιον ἔσται.</p>
+   <input type="text" class="answer 326" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 326"> ---uu-uu-uu-uu--</p>
+   <p class="line 326">ὣς εἰπὼν προΐει, κρατερὸν δ᾽ ἐπὶ μῦθον ἔτελλε:</p>
+   <input type="text" class="answer 327" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 327"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 327">τὼ δ᾽ ἀέκοντε βάτην παρὰ θῖν᾽ ἁλὸς ἀτρυγέτοιο,</p>
+   <input type="text" class="answer 328" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 328"> -uu-uu-uu---uu--</p>
+   <p class="line 328">Μυρμιδόνων δ᾽ ἐπί τε κλισίας καὶ νῆας ἱκέσθην,</p>
+   <input type="text" class="answer 329" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 329"> ---uu-uu---uu--</p>
+   <p class="line 329">τὸν δ᾽ εὗρον παρά τε κλισίῃ καὶ νηῒ μελαίνῃ</p>
+   <input type="text" class="answer 330" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 330"> -uu-uu-uu---uu--</p>
+   <p class="line 330">ἥμενον: οὐδ᾽ ἄρα τώ γε ἰδὼν γήθησεν Ἀχιλλεύς.</p>
+   <input type="text" class="answer 331" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 331"> -----uu-uu-uu--</p>
+   <p class="line 331">τὼ μὲν ταρβήσαντε καὶ αἰδομένω βασιλῆα</p>
+   <input type="text" class="answer 332" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 332"> ---uu-uu-uu-uu--</p>
+   <p class="line 332">στήτην, οὐδέ τί μιν προσεφώνεον οὐδ᾽ ἐρέοντο:</p>
+   <input type="text" class="answer 333" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 333"> -uu---uu-uu----</p>
+   <p class="line 333">αὐτὰρ ὃ ἔγνω ᾗσιν ἐνὶ φρεσὶ φώνησέν τε:</p>
+   <input type="text" class="answer 334" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 334"> -uu---uu-uu-uu--</p>
+   <p class="line 334">χαίρετε κήρυκες Διὸς ἄγγελοι ἠδὲ καὶ ἀνδρῶν,</p>
+   <input type="text" class="answer 335" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 335"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 335">ἆσσον ἴτ᾽: οὔ τί μοι ὔμμες ἐπαίτιοι ἀλλ᾽ Ἀγαμέμνων,</p>
+   <input type="text" class="answer 336" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 336"> ---uu---uu-uu--</p>
+   <p class="line 336">ὃ σφῶϊ προΐει Βρισηΐδος εἵνεκα κούρης.</p>
+   <input type="text" class="answer 337" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 337"> -uu-uu---uu-uu--</p>
+   <p class="line 337">ἀλλ᾽ ἄγε διογενὲς Πατρόκλεες ἔξαγε κούρην</p>
+   <input type="text" class="answer 338" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 338"> ---uu-----uu--</p>
+   <p class="line 338">καί σφωϊν δὸς ἄγειν: τὼ δ᾽ αὐτὼ μάρτυροι ἔστων</p>
+   <input type="text" class="answer 339" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 339"> -uu-uu--------</p>
+   <p class="line 339">πρός τε θεῶν μακάρων πρός τε θνητῶν ἀνθρώπων</p>
+   <input type="text" class="answer 340" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 340"> ---uu-uu-uu-uu--</p>
+   <p class="line 340">καὶ πρὸς τοῦ βασιλῆος ἀπηνέος εἴ ποτε δ᾽ αὖτε</p>
+   <input type="text" class="answer 341" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 341"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 341">χρειὼ ἐμεῖο γένηται ἀεικέα λοιγὸν ἀμῦναι</p>
+   <input type="text" class="answer 342" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 342"> -----uu---uu--</p>
+   <p class="line 342">τοῖς ἄλλοις: ἦ γὰρ ὅ γ᾽ ὀλοιῇσι φρεσὶ θύει,</p>
+   <input type="text" class="answer 343" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 343"> -uu-uu-uu---uu--</p>
+   <p class="line 343">οὐδέ τι οἶδε νοῆσαι ἅμα πρόσσω καὶ ὀπίσσω,</p>
+   <input type="text" class="answer 344" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 344"> ---uu-uu-uu-uu--</p>
+   <p class="line 344">ὅππως οἱ παρὰ νηυσὶ σόοι μαχέοιντο Ἀχαιοί.</p>
+   <input type="text" class="answer 345" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 345"> -uu---uu-uu-uu--</p>
+   <p class="line 345">ὣς φάτο, Πάτροκλος δὲ φίλῳ ἐπεπείθεθ᾽ ἑταίρῳ,</p>
+   <input type="text" class="answer 346" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 346"> -uu-----uu-uu--</p>
+   <p class="line 346">ἐκ δ᾽ ἄγαγε κλισίης Βρισηΐδα καλλιπάρῃον,</p>
+   <input type="text" class="answer 347" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 347"> -uu---uu-uu-uu--</p>
+   <p class="line 347">δῶκε δ᾽ ἄγειν: τὼ δ᾽ αὖτις ἴτην παρὰ νῆας Ἀχαιῶν:</p>
+   <input type="text" class="answer 348" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 348"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 348">ἣ δ᾽ ἀέκουσ᾽ ἅμα τοῖσι γυνὴ κίεν: αὐτὰρ Ἀχιλλεὺς</p>
+   <input type="text" class="answer 349" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 349"> ---uu-uu-uu-uu--</p>
+   <p class="line 349">δακρύσας ἑτάρων ἄφαρ ἕζετο νόσφι λιασθείς,</p>
+   <input type="text" class="answer 350" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 350"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 350">θῖν᾽ ἔφ᾽ ἁλὸς πολιῆς, ὁρόων ἐπ᾽ ἀπείρονα πόντον:</p>
+   <input type="text" class="answer 351" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 351"> -uu-uu---uu-uu--</p>
+   <p class="line 351">πολλὰ δὲ μητρὶ φίλῃ ἠρήσατο χεῖρας ὀρεγνύς:</p>
+   <input type="text" class="answer 352" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 352"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 352">μῆτερ ἐπεί μ᾽ ἔτεκές γε μινυνθάδιόν περ ἐόντα,</p>
+   <input type="text" class="answer 353" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 353"> ---uu-uu-uu-uu--</p>
+   <p class="line 353">τιμήν πέρ μοι ὄφελλεν Ὀλύμπιος ἐγγυαλίξαι</p>
+   <input type="text" class="answer 354" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 354"> ---uu---uu-uu--</p>
+   <p class="line 354">Ζεὺς ὑψιβρεμέτης: νῦν δ᾽ οὐδέ με τυτθὸν ἔτισεν:</p>
+   <input type="text" class="answer 355" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 355"> ---uu-----uu--</p>
+   <p class="line 355">ἦ γάρ μ᾽ Ἀτρεΐδης εὐρὺ κρείων Ἀγαμέμνων</p>
+   <input type="text" class="answer 356" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 356"> ---uu-uu-uu-uu--</p>
+   <p class="line 356">ἠτίμησεν: ἑλὼν γὰρ ἔχει γέρας αὐτὸς ἀπούρας.</p>
+   <input type="text" class="answer 357" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 357"> -uu-uu---uu-uu--</p>
+   <p class="line 357">ὣς φάτο δάκρυ χέων, τοῦ δ᾽ ἔκλυε πότνια μήτηρ</p>
+   <input type="text" class="answer 358" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 358"> -uu---uu-uu-uu--</p>
+   <p class="line 358">ἡμένη ἐν βένθεσσιν ἁλὸς παρὰ πατρὶ γέροντι:</p>
+   <input type="text" class="answer 359" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 359"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 359">καρπαλίμως δ᾽ ἀνέδυ πολιῆς ἁλὸς ἠΰτ᾽ ὀμίχλη,</p>
+   <input type="text" class="answer 360" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 360"> -uu---uu-uu-uu--</p>
+   <p class="line 360">καί ῥα πάροιθ᾽ αὐτοῖο καθέζετο δάκρυ χέοντος,</p>
+   <input type="text" class="answer 361" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 361"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 361">χειρί τέ μιν κατέρεξεν ἔπος τ᾽ ἔφατ᾽ ἔκ τ᾽ ὀνόμαζε:</p>
+   <input type="text" class="answer 362" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 362"> -----uu-uu-uu--</p>
+   <p class="line 362">τέκνον τί κλαίεις; τί δέ σε φρένας ἵκετο πένθος;</p>
+   <input type="text" class="answer 363" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 363"> -----uu-uu-uu--</p>
+   <p class="line 363">ἐξαύδα, μὴ κεῦθε νόῳ, ἵνα εἴδομεν ἄμφω.</p>
+   <input type="text" class="answer 364" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 364"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 364">τὴν δὲ βαρὺ στενάχων προσέφη πόδας ὠκὺς Ἀχιλλεύς:</p>
+   <input type="text" class="answer 365" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 365"> -uu---uu---uu--</p>
+   <p class="line 365">οἶσθα: τί ἤ τοι ταῦτα ἰδυίῃ πάντ᾽ ἀγορεύω;</p>
+   <input type="text" class="answer 366" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 366"> -uu---uu-uu-uu--</p>
+   <p class="line 366">ᾠχόμεθ᾽ ἐς Θήβην ἱερὴν πόλιν Ἠετίωνος,</p>
+   <input type="text" class="answer 367" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 367"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 367">τὴν δὲ διεπράθομέν τε καὶ ἤγομεν ἐνθάδε πάντα:</p>
+   <input type="text" class="answer 368" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 368"> -uu---uu-uu-uu--</p>
+   <p class="line 368">καὶ τὰ μὲν εὖ δάσσαντο μετὰ σφίσιν υἷες Ἀχαιῶν,</p>
+   <input type="text" class="answer 369" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 369"> -uu-uu---uu-uu--</p>
+   <p class="line 369">ἐκ δ᾽ ἕλον Ἀτρεΐδῃ Χρυσηΐδα καλλιπάρῃον.</p>
+   <input type="text" class="answer 370" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 370"> ---uu-uu-uu----</p>
+   <p class="line 370">Χρύσης δ᾽ αὖθ᾽ ἱερεὺς ἑκατηβόλου Ἀπόλλωνος</p>
+   <input type="text" class="answer 371" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 371"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 371">ἦλθε θοὰς ἐπὶ νῆας Ἀχαιῶν χαλκοχιτώνων</p>
+   <input type="text" class="answer 372" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 372"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 372">λυσόμενός τε θύγατρα φέρων τ᾽ ἀπερείσι᾽ ἄποινα,</p>
+   <input type="text" class="answer 373" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 373"> -uu---uu-uu----</p>
+   <p class="line 373">στέμματ᾽ ἔχων ἐν χερσὶν ἑκηβόλου Ἀπόλλωνος</p>
+   <input type="text" class="answer 374" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 374"> -uu-----uu-uu--</p>
+   <p class="line 374">χρυσέῳ ἀνὰ σκήπτρῳ, καὶ λίσσετο πάντας Ἀχαιούς,</p>
+   <input type="text" class="answer 375" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 375"> -uu-uu-uu---uu--</p>
+   <p class="line 375">Ἀτρεΐδα δὲ μάλιστα δύω κοσμήτορε λαῶν.</p>
+   <input type="text" class="answer 376" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 376"> -----uu---uu--</p>
+   <p class="line 376">ἔνθ᾽ ἄλλοι μὲν πάντες ἐπευφήμησαν Ἀχαιοὶ</p>
+   <input type="text" class="answer 377" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 377"> ---uu-uu-uu-uu--</p>
+   <p class="line 377">αἰδεῖσθαί θ᾽ ἱερῆα καὶ ἀγλαὰ δέχθαι ἄποινα:</p>
+   <input type="text" class="answer 378" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 378"> ---uu-uu-uu-uu--</p>
+   <p class="line 378">ἀλλ᾽ οὐκ Ἀτρεΐδῃ Ἀγαμέμνονι ἥνδανε θυμῷ,</p>
+   <input type="text" class="answer 379" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 379"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 379">ἀλλὰ κακῶς ἀφίει, κρατερὸν δ᾽ ἐπὶ μῦθον ἔτελλε:</p>
+   <input type="text" class="answer 380" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 380"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 380">χωόμενος δ᾽ ὁ γέρων πάλιν ᾤχετο: τοῖο δ᾽ Ἀπόλλων</p>
+   <input type="text" class="answer 381" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 381"> -uu---uu-uu-uu--</p>
+   <p class="line 381">εὐξαμένου ἤκουσεν, ἐπεὶ μάλα οἱ φίλος ἦεν,</p>
+   <input type="text" class="answer 382" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 382"> -uu---uu-uu-uu--</p>
+   <p class="line 382">ἧκε δ᾽ ἐπ᾽ Ἀργείοισι κακὸν βέλος: οἳ δέ νυ λαοὶ</p>
+   <input type="text" class="answer 383" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 383"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 383">θνῇσκον ἐπασσύτεροι, τὰ δ᾽ ἐπῴχετο κῆλα θεοῖο</p>
+   <input type="text" class="answer 384" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 384"> -uu-uu-uu---uu--</p>
+   <p class="line 384">πάντῃ ἀνὰ στρατὸν εὐρὺν Ἀχαιῶν: ἄμμι δὲ μάντις</p>
+   <input type="text" class="answer 385" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 385"> ---uu-uu-uu-uu--</p>
+   <p class="line 385">εὖ εἰδὼς ἀγόρευε θεοπροπίας ἑκάτοιο.</p>
+   <input type="text" class="answer 386" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 386"> -uu---uu-uu----</p>
+   <p class="line 386">αὐτίκ᾽ ἐγὼ πρῶτος κελόμην θεὸν ἱλάσκεσθαι:</p>
+   <input type="text" class="answer 387" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 387"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 387">Ἀτρεΐωνα δ᾽ ἔπειτα χόλος λάβεν, αἶψα δ᾽ ἀναστὰς</p>
+   <input type="text" class="answer 388" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 388"> -----uu-uu-uu--</p>
+   <p class="line 388">ἠπείλησεν μῦθον ὃ δὴ τετελεσμένος ἐστί:</p>
+   <input type="text" class="answer 389" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 389"> -----uu-uu-uu--</p>
+   <p class="line 389">τὴν μὲν γὰρ σὺν νηῒ θοῇ ἑλίκωπες Ἀχαιοὶ</p>
+   <input type="text" class="answer 390" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 390"> -----uu-uu-uu--</p>
+   <p class="line 390">ἐς Χρύσην πέμπουσιν, ἄγουσι δὲ δῶρα ἄνακτι:</p>
+   <input type="text" class="answer 391" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 391"> -uu-uu-uu---uu--</p>
+   <p class="line 391">τὴν δὲ νέον κλισίηθεν ἔβαν κήρυκες ἄγοντες</p>
+   <input type="text" class="answer 392" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 392"> -------uu-uu--</p>
+   <p class="line 392">κούρην Βρισῆος τήν μοι δόσαν υἷες Ἀχαιῶν.</p>
+   <input type="text" class="answer 393" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 393"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 393">ἀλλὰ σὺ εἰ δύνασαί γε περίσχεο παιδὸς ἑῆος:</p>
+   <input type="text" class="answer 394" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 394"> -----uu-uu-uu--</p>
+   <p class="line 394">ἐλθοῦσ᾽ Οὔλυμπον δὲ Δία λίσαι, εἴ ποτε δή τι</p>
+   <input type="text" class="answer 395" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 395"> -uu---uu-uu-uu--</p>
+   <p class="line 395">ἢ ἔπει ὤνησας κραδίην Διὸς ἠὲ καὶ ἔργῳ.</p>
+   <input type="text" class="answer 396" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 396"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 396">πολλάκι γάρ σεο πατρὸς ἐνὶ μεγάροισιν ἄκουσα</p>
+   <input type="text" class="answer 397" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 397"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 397">εὐχομένης ὅτ᾽ ἔφησθα κελαινεφέϊ Κρονίωνι</p>
+   <input type="text" class="answer 398" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 398"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 398">οἴη ἐν ἀθανάτοισιν ἀεικέα λοιγὸν ἀμῦναι,</p>
+   <input type="text" class="answer 399" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 399"> -uu-uu---uu-uu--</p>
+   <p class="line 399">ὁππότε μιν ξυνδῆσαι Ὀλύμπιοι ἤθελον ἄλλοι</p>
+   <input type="text" class="answer 400" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 400"> ---uu-----uu--</p>
+   <p class="line 400">Ἥρη τ᾽ ἠδὲ Ποσειδάων καὶ Παλλὰς Ἀθήνη:</p>
+   <input type="text" class="answer 401" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 401"> -uu---uu-uu-uu--</p>
+   <p class="line 401">ἀλλὰ σὺ τόν γ᾽ ἐλθοῦσα θεὰ ὑπελύσαο δεσμῶν,</p>
+   <input type="text" class="answer 402" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 402"> -uu---uu---uu--</p>
+   <p class="line 402">ὦχ᾽ ἑκατόγχειρον καλέσασ᾽ ἐς μακρὸν Ὄλυμπον,</p>
+   <input type="text" class="answer 403" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 403"> -uu-uu-uu---uu--</p>
+   <p class="line 403">ὃν Βριάρεων καλέουσι θεοί, ἄνδρες δέ τε πάντες</p>
+   <input type="text" class="answer 404" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 404"> ---uu-uu---uu--</p>
+   <p class="line 404">Αἰγαίων᾽, ὃ γὰρ αὖτε βίην οὗ πατρὸς ἀμείνων:</p>
+   <input type="text" class="answer 405" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 405"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 405">ὅς ῥα παρὰ Κρονίωνι καθέζετο κύδεϊ γαίων:</p>
+   <input type="text" class="answer 406" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 406"> -uu---uu-uu-uu--</p>
+   <p class="line 406">τὸν καὶ ὑπέδεισαν μάκαρες θεοὶ οὐδ᾽ ἔτ᾽ ἔδησαν.</p>
+   <input type="text" class="answer 407" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 407"> -----uu-uu-uu--</p>
+   <p class="line 407">τῶν νῦν μιν μνήσασα παρέζεο καὶ λαβὲ γούνων</p>
+   <input type="text" class="answer 408" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 408"> ---uu-uu---uu--</p>
+   <p class="line 408">αἴ κέν πως ἐθέλῃσιν ἐπὶ Τρώεσσιν ἀρῆξαι,</p>
+   <input type="text" class="answer 409" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 409"> -uu---uu-uu-uu--</p>
+   <p class="line 409">τοὺς δὲ κατὰ πρύμνας τε καὶ ἀμφ᾽ ἅλα ἔλσαι Ἀχαιοὺς</p>
+   <input type="text" class="answer 410" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 410"> -uu-uu-uu---uu--</p>
+   <p class="line 410">κτεινομένους, ἵνα πάντες ἐπαύρωνται βασιλῆος,</p>
+   <input type="text" class="answer 411" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 411"> -uu-uu-----uu--</p>
+   <p class="line 411">γνῷ δὲ καὶ Ἀτρεΐδης εὐρὺ κρείων Ἀγαμέμνων</p>
+   <input type="text" class="answer 412" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 412"> ---uu-uu---uu--</p>
+   <p class="line 412">ἣν ἄτην ὅ τ᾽ ἄριστον Ἀχαιῶν οὐδὲν ἔτισεν.</p>
+   <input type="text" class="answer 413" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 413"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 413">τὸν δ᾽ ἠμείβετ᾽ ἔπειτα Θέτις κατὰ δάκρυ χέουσα:</p>
+   <input type="text" class="answer 414" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 414"> ---uu-uu-uu-uu--</p>
+   <p class="line 414">ὤ μοι τέκνον ἐμόν, τί νύ σ᾽ ἔτρεφον αἰνὰ τεκοῦσα;</p>
+   <input type="text" class="answer 415" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 415"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 415">αἴθ᾽ ὄφελες παρὰ νηυσὶν ἀδάκρυτος καὶ ἀπήμων</p>
+   <input type="text" class="answer 416" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 416"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 416">ἧσθαι, ἐπεί νύ τοι αἶσα μίνυνθά περ οὔ τι μάλα δήν:</p>
+   <input type="text" class="answer 417" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 417"> -uu-uu-uu---uu--</p>
+   <p class="line 417">νῦν δ᾽ ἅμα τ᾽ ὠκύμορος καὶ ὀϊζυρὸς περὶ πάντων</p>
+   <input type="text" class="answer 418" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 418"> -uu-uu---uu-uu--</p>
+   <p class="line 418">ἔπλεο: τώ σε κακῇ αἴσῃ τέκον ἐν μεγάροισι.</p>
+   <input type="text" class="answer 419" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 419"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 419">τοῦτο δέ τοι ἐρέουσα ἔπος Διὶ τερπικεραύνῳ</p>
+   <input type="text" class="answer 420" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 420"> ---uu-uu-uu-uu--</p>
+   <p class="line 420">εἶμ᾽ αὐτὴ πρὸς Ὄλυμπον ἀγάννιφον αἴ κε πίθηται.</p>
+   <input type="text" class="answer 421" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 421"> -uu---uu-uu-uu--</p>
+   <p class="line 421">ἀλλὰ σὺ μὲν νῦν νηυσὶ παρήμενος ὠκυπόροισι</p>
+   <input type="text" class="answer 422" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 422"> -uu---uu-uu-uu--</p>
+   <p class="line 422">μήνι᾽ Ἀχαιοῖσιν, πολέμου δ᾽ ἀποπαύεο πάμπαν:</p>
+   <input type="text" class="answer 423" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 423"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 423">Ζεὺς γὰρ ἐς Ὠκεανὸν μετ᾽ ἀμύμονας Αἰθιοπῆας</p>
+   <input type="text" class="answer 424" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 424"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 424">χθιζὸς ἔβη κατὰ δαῖτα, θεοὶ δ᾽ ἅμα πάντες ἕποντο:</p>
+   <input type="text" class="answer 425" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 425"> -uu-uu-uu-uu----</p>
+   <p class="line 425">δωδεκάτῃ δέ τοι αὖτις ἐλεύσεται Οὔλυμπον δέ,</p>
+   <input type="text" class="answer 426" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 426"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 426">καὶ τότ᾽ ἔπειτά τοι εἶμι Διὸς ποτὶ χαλκοβατὲς δῶ,</p>
+   <input type="text" class="answer 427" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 427"> ---uu-----uu--</p>
+   <p class="line 427">καί μιν γουνάσομαι καί μιν πείσεσθαι ὀΐω.</p>
+   <input type="text" class="answer 428" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 428"> -uu---uu-uu-uu--</p>
+   <p class="line 428">ὣς ἄρα φωνήσασ᾽ ἀπεβήσετο, τὸν δὲ λίπ᾽ αὐτοῦ</p>
+   <input type="text" class="answer 429" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 429"> -uu-uu-uu---uu--</p>
+   <p class="line 429">χωόμενον κατὰ θυμὸν ἐϋζώνοιο γυναικὸς</p>
+   <input type="text" class="answer 430" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 430"> -uu-uu-uu---uu--</p>
+   <p class="line 430">τήν ῥα βίῃ ἀέκοντος ἀπηύρων: αὐτὰρ Ὀδυσσεὺς</p>
+   <input type="text" class="answer 431" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 431"> -----uu-uu-uu--</p>
+   <p class="line 431">ἐς Χρύσην ἵκανεν ἄγων ἱερὴν ἑκατόμβην.</p>
+   <input type="text" class="answer 432" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 432"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 432">οἳ δ᾽ ὅτε δὴ λιμένος πολυβενθέος ἐντὸς ἵκοντο</p>
+   <input type="text" class="answer 433" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 433"> -----uu-uu-uu--</p>
+   <p class="line 433">ἱστία μὲν στείλαντο, θέσαν δ᾽ ἐν νηῒ μελαίνῃ,</p>
+   <input type="text" class="answer 434" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 434"> ---uu-uu-uu-uu--</p>
+   <p class="line 434">ἱστὸν δ᾽ ἱστοδόκῃ πέλασαν προτόνοισιν ὑφέντες</p>
+   <input type="text" class="answer 435" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 435"> -uu---uu-uu-uu--</p>
+   <p class="line 435">καρπαλίμως, τὴν δ᾽ εἰς ὅρμον προέρεσσαν ἐρετμοῖς.</p>
+   <input type="text" class="answer 436" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 436"> ---uu-uu---uu--</p>
+   <p class="line 436">ἐκ δ᾽ εὐνὰς ἔβαλον, κατὰ δὲ πρυμνήσι᾽ ἔδησαν:</p>
+   <input type="text" class="answer 437" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 437"> -uu---uu---uu--</p>
+   <p class="line 437">ἐκ δὲ καὶ αὐτοὶ βαῖνον ἐπὶ ῥηγμῖνι θαλάσσης,</p>
+   <input type="text" class="answer 438" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 438"> -uu---uu-uu----</p>
+   <p class="line 438">ἐκ δ᾽ ἑκατόμβην βῆσαν ἑκηβόλῳ Ἀπόλλωνι:</p>
+   <input type="text" class="answer 439" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 439"> ---------uu--</p>
+   <p class="line 439">ἐκ δὲ Χρυσηῒς νηὸς βῆ ποντοπόροιο.</p>
+   <input type="text" class="answer 440" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 440"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 440">τὴν μὲν ἔπειτ᾽ ἐπὶ βωμὸν ἄγων πολύμητις Ὀδυσσεὺς</p>
+   <input type="text" class="answer 441" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 441"> -uu---uu---uu--</p>
+   <p class="line 441">πατρὶ φίλῳ ἐν χερσὶ τίθει καί μιν προσέειπεν:</p>
+   <input type="text" class="answer 442" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 442"> ---uu-uu---uu--</p>
+   <p class="line 442">ὦ Χρύση, πρό μ᾽ ἔπεμψεν ἄναξ ἀνδρῶν Ἀγαμέμνων</p>
+   <input type="text" class="answer 443" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 443"> -uu-uu---uu-uu--</p>
+   <p class="line 443">παῖδά τε σοὶ ἀγέμεν, Φοίβῳ θ᾽ ἱερὴν ἑκατόμβην</p>
+   <input type="text" class="answer 444" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 444"> -uu-uu---uu-uu--</p>
+   <p class="line 444">ῥέξαι ὑπὲρ Δαναῶν ὄφρ᾽ ἱλασόμεσθα ἄνακτα,</p>
+   <input type="text" class="answer 445" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 445"> -----uu-uu-uu--</p>
+   <p class="line 445">ὃς νῦν Ἀργείοισι πολύστονα κήδε᾽ ἐφῆκεν.</p>
+   <input type="text" class="answer 446" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 446"> -----uu-uu-uu--</p>
+   <p class="line 446">ὣς εἰπὼν ἐν χερσὶ τίθει, ὃ δὲ δέξατο χαίρων</p>
+   <input type="text" class="answer 447" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 447"> -uu---uu-uu-uu--</p>
+   <p class="line 447">παῖδα φίλην: τοὶ δ᾽ ὦκα θεῷ ἱερὴν ἑκατόμβην</p>
+   <input type="text" class="answer 448" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 448"> -----uu---uu--</p>
+   <p class="line 448">ἑξείης ἔστησαν ἐΰδμητον περὶ βωμόν,</p>
+   <input type="text" class="answer 449" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 449"> ---uu-uu-uu-uu--</p>
+   <p class="line 449">χερνίψαντο δ᾽ ἔπειτα καὶ οὐλοχύτας ἀνέλοντο.</p>
+   <input type="text" class="answer 450" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 450"> -----uu-uu-uu--</p>
+   <p class="line 450">τοῖσιν δὲ Χρύσης μεγάλ᾽ εὔχετο χεῖρας ἀνασχών:</p>
+   <input type="text" class="answer 451" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 451"> -uu-uu-----uu--</p>
+   <p class="line 451">κλῦθί μευ ἀργυρότοξ᾽, ὃς Χρύσην ἀμφιβέβηκας</p>
+   <input type="text" class="answer 452" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 452"> ---uu-uu-uu-uu--</p>
+   <p class="line 452">Κίλλαν τε ζαθέην Τενέδοιό τε ἶφι ἀνάσσεις:</p>
+   <input type="text" class="answer 453" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 453"> ---uu-uu-uu-uu--</p>
+   <p class="line 453">ἦ μὲν δή ποτ᾽ ἐμεῦ πάρος ἔκλυες εὐξαμένοιο,</p>
+   <input type="text" class="answer 454" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 454"> ---uu-uu-uu-uu--</p>
+   <p class="line 454">τίμησας μὲν ἐμέ, μέγα δ᾽ ἴψαο λαὸν Ἀχαιῶν:</p>
+   <input type="text" class="answer 455" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 455"> -uu---uu---uu--</p>
+   <p class="line 455">ἠδ᾽ ἔτι καὶ νῦν μοι τόδ᾽ ἐπικρήηνον ἐέλδωρ:</p>
+   <input type="text" class="answer 456" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 456"> ---uu-uu-uu-uu--</p>
+   <p class="line 456">ἤδη νῦν Δαναοῖσιν ἀεικέα λοιγὸν ἄμυνον.</p>
+   <input type="text" class="answer 457" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 457"> -uu-uu---uu-uu--</p>
+   <p class="line 457">ὣς ἔφατ᾽ εὐχόμενος, τοῦ δ᾽ ἔκλυε Φοῖβος Ἀπόλλων.</p>
+   <input type="text" class="answer 458" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 458"> -uu---uu-uu-uu--</p>
+   <p class="line 458">αὐτὰρ ἐπεί ῥ᾽ εὔξαντο καὶ οὐλοχύτας προβάλοντο,</p>
+   <input type="text" class="answer 459" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 459"> -uu---uu---uu--</p>
+   <p class="line 459">αὐέρυσαν μὲν πρῶτα καὶ ἔσφαξαν καὶ ἔδειραν,</p>
+   <input type="text" class="answer 460" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 460"> ---uu-uu---uu--</p>
+   <p class="line 460">μηρούς τ᾽ ἐξέταμον κατά τε κνίσῃ ἐκάλυψαν</p>
+   <input type="text" class="answer 461" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 461"> -uu---uu---uu--</p>
+   <p class="line 461">δίπτυχα ποιήσαντες, ἐπ᾽ αὐτῶν δ᾽ ὠμοθέτησαν:</p>
+   <input type="text" class="answer 462" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 462"> -uu---uu-uu-uu--</p>
+   <p class="line 462">καῖε δ᾽ ἐπὶ σχίζῃς ὁ γέρων, ἐπὶ δ᾽ αἴθοπα οἶνον</p>
+   <input type="text" class="answer 463" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 463"> -uu-uu-uu---uu--</p>
+   <p class="line 463">λεῖβε: νέοι δὲ παρ᾽ αὐτὸν ἔχον πεμπώβολα χερσίν.</p>
+   <input type="text" class="answer 464" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 464"> -uu-uu-uu---uu--</p>
+   <p class="line 464">αὐτὰρ ἐπεὶ κατὰ μῆρε κάη καὶ σπλάγχνα πάσαντο,</p>
+   <input type="text" class="answer 465" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 465"> ---uu-uu-uu-uu--</p>
+   <p class="line 465">μίστυλλόν τ᾽ ἄρα τἆλλα καὶ ἀμφ᾽ ὀβελοῖσιν ἔπειραν,</p>
+   <input type="text" class="answer 466" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 466"> ---uu-uu-uu-uu--</p>
+   <p class="line 466">ὤπτησάν τε περιφραδέως, ἐρύσαντό τε πάντα.</p>
+   <input type="text" class="answer 467" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 467"> -uu---uu-uu-uu--</p>
+   <p class="line 467">αὐτὰρ ἐπεὶ παύσαντο πόνου τετύκοντό τε δαῖτα</p>
+   <input type="text" class="answer 468" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 468"> ---uu-uu-uu-uu--</p>
+   <p class="line 468">δαίνυντ᾽, οὐδέ τι θυμὸς ἐδεύετο δαιτὸς ἐΐσης.</p>
+   <input type="text" class="answer 469" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 469"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 469">αὐτὰρ ἐπεὶ πόσιος καὶ ἐδητύος ἐξ ἔρον ἕντο,</p>
+   <input type="text" class="answer 470" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 470"> -----uu---uu--</p>
+   <p class="line 470">κοῦροι μὲν κρητῆρας ἐπεστέψαντο ποτοῖο,</p>
+   <input type="text" class="answer 471" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 471"> ---uu-uu-uu-uu--</p>
+   <p class="line 471">νώμησαν δ᾽ ἄρα πᾶσιν ἐπαρξάμενοι δεπάεσσιν:</p>
+   <input type="text" class="answer 472" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 472"> -uu-uu---uu----</p>
+   <p class="line 472">οἳ δὲ πανημέριοι μολπῇ θεὸν ἱλάσκοντο</p>
+   <input type="text" class="answer 473" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 473"> -uu-----uu-uu--</p>
+   <p class="line 473">καλὸν ἀείδοντες παιήονα κοῦροι Ἀχαιῶν</p>
+   <input type="text" class="answer 474" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 474"> ---uu-uu-uu-uu--</p>
+   <p class="line 474">μέλποντες ἑκάεργον: ὃ δὲ φρένα τέρπετ᾽ ἀκούων.</p>
+   <input type="text" class="answer 475" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 475"> ---uu-uu-uu-uu--</p>
+   <p class="line 475">ἦμος δ᾽ ἠέλιος κατέδυ καὶ ἐπὶ κνέφας ἦλθε,</p>
+   <input type="text" class="answer 476" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 476"> -uu---uu---uu--</p>
+   <p class="line 476">δὴ τότε κοιμήσαντο παρὰ πρυμνήσια νηός:</p>
+   <input type="text" class="answer 477" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 477"> ---uu-uu-uu-uu--</p>
+   <p class="line 477">ἦμος δ᾽ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς,</p>
+   <input type="text" class="answer 478" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 478"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 478">καὶ τότ᾽ ἔπειτ᾽ ἀνάγοντο μετὰ στρατὸν εὐρὺν Ἀχαιῶν:</p>
+   <input type="text" class="answer 479" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 479"> ---uu-uu-uu-uu--</p>
+   <p class="line 479">τοῖσιν δ᾽ ἴκμενον οὖρον ἵει ἑκάεργος Ἀπόλλων:</p>
+   <input type="text" class="answer 480" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 480"> -------uu-uu--</p>
+   <p class="line 480">οἳ δ᾽ ἱστὸν στήσαντ᾽ ἀνά θ᾽ ἱστία λευκὰ πέτασσαν,</p>
+   <input type="text" class="answer 481" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 481"> -uu---uu-uu-uu--</p>
+   <p class="line 481">ἐν δ᾽ ἄνεμος πρῆσεν μέσον ἱστίον, ἀμφὶ δὲ κῦμα</p>
+   <input type="text" class="answer 482" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 482"> ---uu-uu-uu-uu--</p>
+   <p class="line 482">στείρῃ πορφύρεον μεγάλ᾽ ἴαχε νηὸς ἰούσης:</p>
+   <input type="text" class="answer 483" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 483"> -uu-uu-uu---uu--</p>
+   <p class="line 483">ἣ δ᾽ ἔθεεν κατὰ κῦμα διαπρήσσουσα κέλευθον.</p>
+   <input type="text" class="answer 484" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 484"> -uu---uu-uu-uu--</p>
+   <p class="line 484">αὐτὰρ ἐπεί ῥ᾽ ἵκοντο κατὰ στρατὸν εὐρὺν Ἀχαιῶν,</p>
+   <input type="text" class="answer 485" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 485"> -uu-uu-uu---uu--</p>
+   <p class="line 485">νῆα μὲν οἵ γε μέλαιναν ἐπ᾽ ἠπείροιο ἔρυσσαν</p>
+   <input type="text" class="answer 486" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 486"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 486">ὑψοῦ ἐπὶ ψαμάθοις, ὑπὸ δ᾽ ἕρματα μακρὰ τάνυσσαν:</p>
+   <input type="text" class="answer 487" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 487"> -----uu-uu-uu--</p>
+   <p class="line 487">αὐτοὶ δ᾽ ἐσκίδναντο κατὰ κλισίας τε νέας τε.</p>
+   <input type="text" class="answer 488" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 488"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 488">αὐτὰρ ὃ μήνιε νηυσὶ παρήμενος ὠκυπόροισι</p>
+   <input type="text" class="answer 489" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 489"> -uu---uu-uu-uu--</p>
+   <p class="line 489">διογενὴς Πηλῆος υἱὸς πόδας ὠκὺς Ἀχιλλεύς:</p>
+   <input type="text" class="answer 490" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 490"> -uu-uu---uu-uu--</p>
+   <p class="line 490">οὔτέ ποτ᾽ εἰς ἀγορὴν πωλέσκετο κυδιάνειραν</p>
+   <input type="text" class="answer 491" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 491"> -uu-uu---uu-uu--</p>
+   <p class="line 491">οὔτέ ποτ᾽ ἐς πόλεμον, ἀλλὰ φθινύθεσκε φίλον κῆρ</p>
+   <input type="text" class="answer 492" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 492"> -uu-uu-uu---uu--</p>
+   <p class="line 492">αὖθι μένων, ποθέεσκε δ᾽ ἀϋτήν τε πτόλεμόν τε.</p>
+   <input type="text" class="answer 493" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 493"> -uu---uu-uu-uu--</p>
+   <p class="line 493">ἀλλ᾽ ὅτε δή ῥ᾽ ἐκ τοῖο δυωδεκάτη γένετ᾽ ἠώς,</p>
+   <input type="text" class="answer 494" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 494"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 494">καὶ τότε δὴ πρὸς Ὄλυμπον ἴσαν θεοὶ αἰὲν ἐόντες</p>
+   <input type="text" class="answer 495" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 495"> -uu---uu---uu--</p>
+   <p class="line 495">πάντες ἅμα, Ζεὺς δ᾽ ἦρχε: Θέτις δ᾽ οὐ λήθετ᾽ ἐφετμέων</p>
+   <input type="text" class="answer 496" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 496"> -uu---uu-uu-uu--</p>
+   <p class="line 496">παιδὸς ἑοῦ, ἀλλ᾽ ἥ γ᾽ ἀνεδύσετο κῦμα θαλάσσης.</p>
+   <input type="text" class="answer 497" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 497"> -uu-uu-uu-uu----</p>
+   <p class="line 497">ἠερίη δ᾽ ἀνέβη μέγαν οὐρανὸν Οὔλυμπόν τε.</p>
+   <input type="text" class="answer 498" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 498"> ---uu-uu-uu-uu--</p>
+   <p class="line 498">εὗρεν δ᾽ εὐρύοπα Κρονίδην ἄτερ ἥμενον ἄλλων</p>
+   <input type="text" class="answer 499" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 499"> -uu-uu-uu-uu----</p>
+   <p class="line 499">ἀκροτάτῃ κορυφῇ πολυδειράδος Οὐλύμποιο:</p>
+   <input type="text" class="answer 500" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 500"> -uu---uu-uu-uu--</p>
+   <p class="line 500">καί ῥα πάροιθ᾽ αὐτοῖο καθέζετο, καὶ λάβε γούνων</p>
+   <input type="text" class="answer 501" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 501"> ---uu-uu-uu-uu--</p>
+   <p class="line 501">σκαιῇ, δεξιτερῇ δ᾽ ἄρ᾽ ὑπ᾽ ἀνθερεῶνος ἑλοῦσα</p>
+   <input type="text" class="answer 502" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 502"> ---uu-uu-uu-uu--</p>
+   <p class="line 502">λισσομένη προσέειπε Δία Κρονίωνα ἄνακτα:</p>
+   <input type="text" class="answer 503" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 503"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 503">Ζεῦ πάτερ εἴ ποτε δή σε μετ᾽ ἀθανάτοισιν ὄνησα</p>
+   <input type="text" class="answer 504" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 504"> -uu---uu---uu--</p>
+   <p class="line 504">ἢ ἔπει ἢ ἔργῳ, τόδε μοι κρήηνον ἐέλδωρ:</p>
+   <input type="text" class="answer 505" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 505"> -----uu-uu-uu--</p>
+   <p class="line 505">τίμησόν μοι υἱὸν ὃς ὠκυμορώτατος ἄλλων</p>
+   <input type="text" class="answer 506" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 506"> -uu---uu---uu--</p>
+   <p class="line 506">ἔπλετ᾽: ἀτάρ μιν νῦν γε ἄναξ ἀνδρῶν Ἀγαμέμνων</p>
+   <input type="text" class="answer 507" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 507"> ---uu-uu-uu-uu--</p>
+   <p class="line 507">ἠτίμησεν: ἑλὼν γὰρ ἔχει γέρας αὐτὸς ἀπούρας.</p>
+   <input type="text" class="answer 508" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 508"> -uu---uu-uu-uu--</p>
+   <p class="line 508">ἀλλὰ σύ πέρ μιν τῖσον Ὀλύμπιε μητίετα Ζεῦ:</p>
+   <input type="text" class="answer 509" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 509"> -uu---uu-uu-uu--</p>
+   <p class="line 509">τόφρα δ᾽ ἐπὶ Τρώεσσι τίθει κράτος ὄφρ᾽ ἂν Ἀχαιοὶ</p>
+   <input type="text" class="answer 510" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 510"> -uu---uu---uu--</p>
+   <p class="line 510">υἱὸν ἐμὸν τίσωσιν ὀφέλλωσίν τέ ἑ τιμῇ.</p>
+   <input type="text" class="answer 511" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 511"> -uu---uu-uu-uu--</p>
+   <p class="line 511">ὣς φάτο: τὴν δ᾽ οὔ τι προσέφη νεφεληγερέτα Ζεύς,</p>
+   <input type="text" class="answer 512" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 512"> -uu---uu---uu--</p>
+   <p class="line 512">ἀλλ᾽ ἀκέων δὴν ἧστο: Θέτις δ᾽ ὡς ἥψατο γούνων</p>
+   <input type="text" class="answer 513" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 513"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 513">ὣς ἔχετ᾽ ἐμπεφυυῖα, καὶ εἴρετο δεύτερον αὖτις:</p>
+   <input type="text" class="answer 514" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 514"> -----uu-uu-uu--</p>
+   <p class="line 514">νημερτὲς μὲν δή μοι ὑπόσχεο καὶ κατάνευσον</p>
+   <input type="text" class="answer 515" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 515"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 515">ἢ ἀπόειπ᾽, ἐπεὶ οὔ τοι ἔπι δέος, ὄφρ᾽ ἐῢ εἰδέω</p>
+   <input type="text" class="answer 516" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 516"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 516">ὅσσον ἐγὼ μετὰ πᾶσιν ἀτιμοτάτη θεός εἰμι.</p>
+   <input type="text" class="answer 517" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 517"> -uu---uu-uu-uu--</p>
+   <p class="line 517">τὴν δὲ μέγ᾽ ὀχθήσας προσέφη νεφεληγερέτα Ζεύς:</p>
+   <input type="text" class="answer 518" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 518"> ---uu-uu-uu-uu--</p>
+   <p class="line 518">ἦ δὴ λοίγια ἔργ᾽ ὅ τέ μ᾽ ἐχθοδοπῆσαι ἐφήσεις</p>
+   <input type="text" class="answer 519" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 519"> -uu-uu-uu---uu--</p>
+   <p class="line 519">Ἥρῃ ὅτ᾽ ἄν μ᾽ ἐρέθῃσιν ὀνειδείοις ἐπέεσσιν:</p>
+   <input type="text" class="answer 520" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 520"> -uu---uu-uu-uu--</p>
+   <p class="line 520">ἣ δὲ καὶ αὔτως μ᾽ αἰεὶ ἐν ἀθανάτοισι θεοῖσι</p>
+   <input type="text" class="answer 521" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 521"> ---uu-uu---uu--</p>
+   <p class="line 521">νεικεῖ, καί τέ μέ φησι μάχῃ Τρώεσσιν ἀρήγειν.</p>
+   <input type="text" class="answer 522" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 522"> -uu---uu-uu-uu--</p>
+   <p class="line 522">ἀλλὰ σὺ μὲν νῦν αὖτις ἀπόστιχε μή τι νοήσῃ</p>
+   <input type="text" class="answer 523" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 523"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 523">Ἥρη: ἐμοὶ δέ κε ταῦτα μελήσεται ὄφρα τελέσσω:</p>
+   <input type="text" class="answer 524" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 524"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 524">εἰ δ᾽ ἄγε τοι κεφαλῇ κατανεύσομαι ὄφρα πεποίθῃς:</p>
+   <input type="text" class="answer 525" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 525"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 525">τοῦτο γὰρ ἐξ ἐμέθεν γε μετ᾽ ἀθανάτοισι μέγιστον</p>
+   <input type="text" class="answer 526" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 526"> ---uu-uu-uu-uu--</p>
+   <p class="line 526">τέκμωρ: οὐ γὰρ ἐμὸν παλινάγρετον οὐδ᾽ ἀπατηλὸν</p>
+   <input type="text" class="answer 527" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 527"> -uu---uu-uu-uu--</p>
+   <p class="line 527">οὐδ᾽ ἀτελεύτητον ὅ τί κεν κεφαλῇ κατανεύσω.</p>
+   <input type="text" class="answer 528" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 528"> ---uu-uu-uu-uu--</p>
+   <p class="line 528">ἦ καὶ κυανέῃσιν ἐπ᾽ ὀφρύσι νεῦσε Κρονίων:</p>
+   <input type="text" class="answer 529" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 529"> ---uu-uu---uu--</p>
+   <p class="line 529">ἀμβρόσιαι δ᾽ ἄρα χαῖται ἐπερρώσαντο ἄνακτος</p>
+   <input type="text" class="answer 530" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 530"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 530">κρατὸς ἀπ᾽ ἀθανάτοιο: μέγαν δ᾽ ἐλέλιξεν Ὄλυμπον.</p>
+   <input type="text" class="answer 531" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 531"> -----uu-uu-uu--</p>
+   <p class="line 531">τώ γ᾽ ὣς βουλεύσαντε διέτμαγεν: ἣ μὲν ἔπειτα</p>
+   <input type="text" class="answer 532" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 532"> -uu-uu-uu---uu--</p>
+   <p class="line 532">εἰς ἅλα ἆλτο βαθεῖαν ἀπ᾽ αἰγλήεντος Ὀλύμπου,</p>
+   <input type="text" class="answer 533" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 533"> -uu---uu-uu-uu--</p>
+   <p class="line 533">Ζεὺς δὲ ἑὸν πρὸς δῶμα: θεοὶ δ᾽ ἅμα πάντες ἀνέσταν</p>
+   <input type="text" class="answer 534" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 534"> -uu---uu-uu-uu--</p>
+   <p class="line 534">ἐξ ἑδέων σφοῦ πατρὸς ἐναντίον: οὐδέ τις ἔτλη</p>
+   <input type="text" class="answer 535" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 535"> -uu-uu---uu-uu--</p>
+   <p class="line 535">μεῖναι ἐπερχόμενον, ἀλλ᾽ ἀντίοι ἔσταν ἅπαντες.</p>
+   <input type="text" class="answer 536" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 536"> -uu-uu-uu---uu--</p>
+   <p class="line 536">ὣς ὃ μὲν ἔνθα καθέζετ᾽ ἐπὶ θρόνου: οὐδέ μιν Ἥρη</p>
+   <input type="text" class="answer 537" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 537"> ---uu-uu---uu--</p>
+   <p class="line 537">ἠγνοίησεν ἰδοῦσ᾽ ὅτι οἱ συμφράσσατο βουλὰς</p>
+   <input type="text" class="answer 538" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 538"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 538">ἀργυρόπεζα Θέτις θυγάτηρ ἁλίοιο γέροντος.</p>
+   <input type="text" class="answer 539" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 539"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 539">αὐτίκα κερτομίοισι Δία Κρονίωνα προσηύδα:</p>
+   <input type="text" class="answer 540" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 540"> ---uu-uu---uu--</p>
+   <p class="line 540">τίς δ᾽ αὖ τοι δολομῆτα θεῶν συμφράσσατο βουλάς;</p>
+   <input type="text" class="answer 541" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 541"> ---uu-uu-uu-uu--</p>
+   <p class="line 541">αἰεί τοι φίλον ἐστὶν ἐμεῦ ἀπὸ νόσφιν ἐόντα</p>
+   <input type="text" class="answer 542" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 542"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 542">κρυπτάδια φρονέοντα δικαζέμεν: οὐδέ τί πώ μοι</p>
+   <input type="text" class="answer 543" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 543"> -------uu-uu--</p>
+   <p class="line 543">πρόφρων τέτληκας εἰπεῖν ἔπος ὅττι νοήσῃς.</p>
+   <input type="text" class="answer 544" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 544"> ---uu-uu---uu--</p>
+   <p class="line 544">τὴν δ᾽ ἠμείβετ᾽ ἔπειτα πατὴρ ἀνδρῶν τε θεῶν τε:</p>
+   <input type="text" class="answer 545" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 545"> -----uu-uu-uu--</p>
+   <p class="line 545">Ἥρη μὴ δὴ πάντας ἐμοὺς ἐπιέλπεο μύθους</p>
+   <input type="text" class="answer 546" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 546"> ---uu-uu-uu-uu--</p>
+   <p class="line 546">εἰδήσειν: χαλεποί τοι ἔσοντ᾽ ἀλόχῳ περ ἐούσῃ:</p>
+   <input type="text" class="answer 547" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 547"> ---uu-uu-uu-uu--</p>
+   <p class="line 547">ἀλλ᾽ ὃν μέν κ᾽ ἐπιεικὲς ἀκουέμεν οὔ τις ἔπειτα</p>
+   <input type="text" class="answer 548" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 548"> -uu-uu---uu----</p>
+   <p class="line 548">οὔτε θεῶν πρότερος τὸν γ εἴσεται οὔτ᾽ ἀνθρώπων:</p>
+   <input type="text" class="answer 549" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 549"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 549">ὃν δέ κ᾽ ἐγὼν ἀπάνευθε θεῶν ἐθέλωμι νοῆσαι</p>
+   <input type="text" class="answer 550" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 550"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 550">μή τι σὺ ταῦτα ἕκαστα διείρεο μηδὲ μετάλλα.</p>
+   <input type="text" class="answer 551" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 551"> ---uu-uu---uu--</p>
+   <p class="line 551">τὸν δ᾽ ἠμείβετ᾽ ἔπειτα βοῶπις πότνια Ἥρη:</p>
+   <input type="text" class="answer 552" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 552"> -uu-uu-----uu--</p>
+   <p class="line 552">αἰνότατε Κρονίδη ποῖον τὸν μῦθον ἔειπες;</p>
+   <input type="text" class="answer 553" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 553"> ---uu---uu-uu--</p>
+   <p class="line 553">καὶ λίην σε πάρος γ᾽ οὔτ᾽ εἴρομαι οὔτε μεταλλῶ,</p>
+   <input type="text" class="answer 554" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 554"> -uu-----uu-uu--</p>
+   <p class="line 554">ἀλλὰ μάλ᾽ εὔκηλος τὰ φράζεαι ἅσσ᾽ ἐθέλῃσθα.</p>
+   <input type="text" class="answer 555" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 555"> -----uu-uu-uu--</p>
+   <p class="line 555">νῦν δ᾽ αἰνῶς δείδοικα κατὰ φρένα μή σε παρείπῃ</p>
+   <input type="text" class="answer 556" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 556"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 556">ἀργυρόπεζα Θέτις θυγάτηρ ἁλίοιο γέροντος:</p>
+   <input type="text" class="answer 557" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 557"> -uu---uu-uu-uu--</p>
+   <p class="line 557">ἠερίη γὰρ σοί γε παρέζετο καὶ λάβε γούνων:</p>
+   <input type="text" class="answer 558" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 558"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 558">τῇ σ᾽ ὀΐω κατανεῦσαι ἐτήτυμον ὡς Ἀχιλῆα</p>
+   <input type="text" class="answer 559" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 559"> ---uu-uu-uu-uu--</p>
+   <p class="line 559">τιμήσῃς, ὀλέσῃς δὲ πολέας ἐπὶ νηυσὶν Ἀχαιῶν.</p>
+   <input type="text" class="answer 560" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 560"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 560">τὴν δ᾽ ἀπαμειβόμενος προσέφη νεφεληγερέτα Ζεύς:</p>
+   <input type="text" class="answer 561" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 561"> -uu---uu-uu-uu--</p>
+   <p class="line 561">δαιμονίη αἰεὶ μὲν ὀΐεαι οὐδέ σε λήθω:</p>
+   <input type="text" class="answer 562" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 562"> -----uu-uu-uu--</p>
+   <p class="line 562">πρῆξαι δ᾽ ἔμπης οὔ τι δυνήσεαι, ἀλλ᾽ ἀπὸ θυμοῦ</p>
+   <input type="text" class="answer 563" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 563"> -uu-uu-uu---uu--</p>
+   <p class="line 563">μᾶλλον ἐμοὶ ἔσεαι: τὸ δέ τοι καὶ ῥίγιον ἔσται.</p>
+   <input type="text" class="answer 564" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 564"> -----uu---uu--</p>
+   <p class="line 564">εἰ δ᾽ οὕτω τοῦτ᾽ ἐστὶν ἐμοὶ μέλλει φίλον εἶναι:</p>
+   <input type="text" class="answer 565" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 565"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 565">ἀλλ᾽ ἀκέουσα κάθησο, ἐμῷ δ᾽ ἐπιπείθεο μύθῳ,</p>
+   <input type="text" class="answer 566" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 566"> -uu---uu-uu-uu--</p>
+   <p class="line 566">μή νύ τοι οὐ χραίσμωσιν ὅσοι θεοί εἰσ᾽ ἐν Ὀλύμπῳ</p>
+   <input type="text" class="answer 567" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 567"> -uu-uu-uu---uu--</p>
+   <p class="line 567">ἆσσον ἰόνθ᾽, ὅτε κέν τοι ἀάπτους χεῖρας ἐφείω.</p>
+   <input type="text" class="answer 568" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 568"> -uu---uu---uu--</p>
+   <p class="line 568">ὣς ἔφατ᾽ ἔδεισεν δὲ βοῶπις πότνια Ἥρη,</p>
+   <input type="text" class="answer 569" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 569"> -uu-uu-uu---uu--</p>
+   <p class="line 569">καί ῥ᾽ ἀκέουσα καθῆστο ἐπιγνάμψασα φίλον κῆρ:</p>
+   <input type="text" class="answer 570" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 570"> ---uu-uu-uu-uu--</p>
+   <p class="line 570">ὄχθησαν δ᾽ ἀνὰ δῶμα Διὸς θεοὶ Οὐρανίωνες:</p>
+   <input type="text" class="answer 571" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 571"> -----uu---uu--</p>
+   <p class="line 571">τοῖσιν δ᾽ Ἥφαιστος κλυτοτέχνης ἦρχ᾽ ἀγορεύειν</p>
+   <input type="text" class="answer 572" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 572"> -uu-uu-uu---uu--</p>
+   <p class="line 572">μητρὶ φίλῃ ἐπίηρα φέρων λευκωλένῳ Ἥρῃ:</p>
+   <input type="text" class="answer 573" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 573"> ---uu-uu-uu-uu--</p>
+   <p class="line 573">ἦ δὴ λοίγια ἔργα τάδ᾽ ἔσσεται οὐδ᾽ ἔτ᾽ ἀνεκτά,</p>
+   <input type="text" class="answer 574" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 574"> ---uu---uu-uu--</p>
+   <p class="line 574">εἰ δὴ σφὼ ἕνεκα θνητῶν ἐριδαίνετον ὧδε,</p>
+   <input type="text" class="answer 575" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 575"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 575">ἐν δὲ θεοῖσι κολῳὸν ἐλαύνετον: οὐδέ τι δαιτὸς</p>
+   <input type="text" class="answer 576" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 576"> ---uu-uu-uu-uu--</p>
+   <p class="line 576">ἐσθλῆς ἔσσεται ἦδος, ἐπεὶ τὰ χερείονα νικᾷ.</p>
+   <input type="text" class="answer 577" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 577"> -uu-uu-uu---uu--</p>
+   <p class="line 577">μητρὶ δ᾽ ἐγὼ παράφημι καὶ αὐτῇ περ νοεούσῃ</p>
+   <input type="text" class="answer 578" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 578"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 578">πατρὶ φίλῳ ἐπίηρα φέρειν Διί, ὄφρα μὴ αὖτε</p>
+   <input type="text" class="answer 579" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 579"> ---uu-----uu--</p>
+   <p class="line 579">νεικείῃσι πατήρ, σὺν δ᾽ ἡμῖν δαῖτα ταράξῃ.</p>
+   <input type="text" class="answer 580" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 580"> ---uu-uu-uu-uu--</p>
+   <p class="line 580">εἴ περ γάρ κ᾽ ἐθέλῃσιν Ὀλύμπιος ἀστεροπητὴς</p>
+   <input type="text" class="answer 581" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 581"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 581">ἐξ ἑδέων στυφελίξαι: ὃ γὰρ πολὺ φέρτατός ἐστιν.</p>
+   <input type="text" class="answer 582" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 582"> -uu-uu-uu---uu--</p>
+   <p class="line 582">ἀλλὰ σὺ τὸν γ᾽ἐπέεσσι καθάπτεσθαι μαλακοῖσιν:</p>
+   <input type="text" class="answer 583" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 583"> -uu---uu-uu-uu--</p>
+   <p class="line 583">αὐτίκ᾽ ἔπειθ᾽ ἵλαος Ὀλύμπιος ἔσσεται ἡμῖν.</p>
+   <input type="text" class="answer 584" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 584"> -uu-uu---uu-uu--</p>
+   <p class="line 584">ὣς ἄρ᾽ ἔφη καὶ ἀναΐξας δέπας ἀμφικύπελλον</p>
+   <input type="text" class="answer 585" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 585"> -uu---uu---uu--</p>
+   <p class="line 585">μητρὶ φίλῃ ἐν χειρὶ τίθει καί μιν προσέειπε:</p>
+   <input type="text" class="answer 586" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 586"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 586">τέτλαθι μῆτερ ἐμή, καὶ ἀνάσχεο κηδομένη περ,</p>
+   <input type="text" class="answer 587" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 587"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 587">μή σε φίλην περ ἐοῦσαν ἐν ὀφθαλμοῖσιν ἴδωμαι</p>
+   <input type="text" class="answer 588" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 588"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 588">θεινομένην, τότε δ᾽ οὔ τι δυνήσομαι ἀχνύμενός περ</p>
+   <input type="text" class="answer 589" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 589"> ---uu-uu-uu-uu--</p>
+   <p class="line 589">χραισμεῖν: ἀργαλέος γὰρ Ὀλύμπιος ἀντιφέρεσθαι:</p>
+   <input type="text" class="answer 590" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 590"> ---uu-uu-uu-uu--</p>
+   <p class="line 590">ἤδη γάρ με καὶ ἄλλοτ᾽ ἀλεξέμεναι μεμαῶτα</p>
+   <input type="text" class="answer 591" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 591"> -uu-uu-uu---uu--</p>
+   <p class="line 591">ῥῖψε ποδὸς τεταγὼν ἀπὸ βηλοῦ θεσπεσίοιο,</p>
+   <input type="text" class="answer 592" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 592"> ---uu-uu-uu-uu--</p>
+   <p class="line 592">πᾶν δ᾽ ἦμαρ φερόμην, ἅμα δ᾽ ἠελίῳ καταδύντι</p>
+   <input type="text" class="answer 593" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 593"> -uu---uu-uu-uu--</p>
+   <p class="line 593">κάππεσον ἐν Λήμνῳ, ὀλίγος δ᾽ ἔτι θυμὸς ἐνῆεν:</p>
+   <input type="text" class="answer 594" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 594"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 594">ἔνθά με Σίντιες ἄνδρες ἄφαρ κομίσαντο πεσόντα.</p>
+   <input type="text" class="answer 595" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 595"> -uu---uu---uu--</p>
+   <p class="line 595">ὣς φάτο, μείδησεν δὲ θεὰ λευκώλενος Ἥρη,</p>
+   <input type="text" class="answer 596" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 596"> ---uu-uu-uu-uu--</p>
+   <p class="line 596">μειδήσασα δὲ παιδὸς ἐδέξατο χειρὶ κύπελλον:</p>
+   <input type="text" class="answer 597" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 597"> -uu---uu---uu--</p>
+   <p class="line 597">αὐτὰρ ὃ τοῖς ἄλλοισι θεοῖς ἐνδέξια πᾶσιν</p>
+   <input type="text" class="answer 598" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 598"> -uu-uu-uu---uu--</p>
+   <p class="line 598">οἰνοχόει γλυκὺ νέκταρ ἀπὸ κρητῆρος ἀφύσσων:</p>
+   <input type="text" class="answer 599" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 599"> ---uu-uu-uu-uu--</p>
+   <p class="line 599">ἄσβεστος δ᾽ ἄρ᾽ ἐνῶρτο γέλως μακάρεσσι θεοῖσιν</p>
+   <input type="text" class="answer 600" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 600"> -uu---uu-uu----</p>
+   <p class="line 600">ὡς ἴδον Ἥφαιστον διὰ δώματα ποιπνύοντα.</p>
+   <input type="text" class="answer 601" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 601"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 601">ὣς τότε μὲν πρόπαν ἦμαρ ἐς ἠέλιον καταδύντα</p>
+   <input type="text" class="answer 602" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 602"> ---uu-uu-uu-uu--</p>
+   <p class="line 602">δαίνυντ᾽, οὐδέ τι θυμὸς ἐδεύετο δαιτὸς ἐΐσης,</p>
+   <input type="text" class="answer 603" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 603"> -----uu-uu-uu--</p>
+   <p class="line 603">οὐ μὲν φόρμιγγος περικαλλέος ἣν ἔχ᾽ Ἀπόλλων,</p>
+   <input type="text" class="answer 604" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 604"> ---uu-uu-uu-uu--</p>
+   <p class="line 604">Μουσάων θ᾽ αἳ ἄειδον ἀμειβόμεναι ὀπὶ καλῇ.</p>
+   <input type="text" class="answer 605" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 605"> -uu-uu---uu-uu--</p>
+   <p class="line 605">αὐτὰρ ἐπεὶ κατέδυ λαμπρὸν φάος ἠελίοιο,</p>
+   <input type="text" class="answer 606" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 606"> -----uu---uu--</p>
+   <p class="line 606">οἳ μὲν κακκείοντες ἔβαν οἶκον δὲ ἕκαστος,</p>
+   <input type="text" class="answer 607" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 607"> -uu---uu-uu-uu--</p>
+   <p class="line 607">ἧχι ἑκάστῳ δῶμα περικλυτὸς ἀμφιγυήεις</p>
+   <input type="text" class="answer 608" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 608"> -----uu---uu--</p>
+   <p class="line 608">Ἥφαιστος ποίησεν ἰδυίῃσι πραπίδεσσι:</p>
+   <input type="text" class="answer 609" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 609"> -uu-uu-uu-uu-uu--</p>
+   <p class="line 609">Ζεὺς δὲ πρὸς ὃν λέχος ἤϊ᾽ Ὀλύμπιος ἀστεροπητής,</p>
+   <input type="text" class="answer 610" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 610"> -uu---uu-uu-uu--</p>
+   <p class="line 610">ἔνθα πάρος κοιμᾶθ᾽ ὅτε μιν γλυκὺς ὕπνος ἱκάνοι:</p>
+   <input type="text" class="answer 611" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+   <p class="correct 611"> -uu-uu-uu---uu--</p>
+   <p class="line 611">ἔνθα καθεῦδ᾽ ἀναβάς, παρὰ δὲ χρυσόθρονος Ἥρη.</p>
+   <button id="Done">Done</button>
+   <p id="right">Great Job!</p>
+   <p id="wrong">Not Quite</p>
+   <p class="notes 1">
+      Synezesis: Πηληϊάδεω
+   </p>
+   <p class="notes 2"> </p>
+   <p class="notes 3"> </p>
+   <p class="notes 4"> </p>
+   <p class="notes 5"> </p>
+   <p class="notes 6"> </p>
+   <p class="notes 7"> </p>
+   <p class="notes 8"> </p>
+   <p class="notes 9"> </p>
+   <p class="notes 10"> </p>
+   <p class="notes 11"> </p>
+   <p class="notes 12"> </p>
+   <p class="notes 13"> </p>
+   <p class="notes 14">
+      Correption: ἑκηβόλου
+   </p>
+   <p class="notes 15">
+      Synezesis: χρυσέῳ
+   </p>
+   <p class="notes 16"> </p>
+   <p class="notes 17">
+      Correption: καὶ, ἄλλοι
+   </p>
+   <p class="notes 18">
+      Synezesis: θεοὶ
+   </p>
+   <p class="notes 19"> </p>
+   <p class="notes 20"> </p>
+   <p class="notes 21"> </p>
+   <p class="notes 22"> </p>
+   <p class="notes 23">
+      Correption: καὶ , δέχθαι
+   </p>
+   <p class="notes 24"> </p>
+   <p class="notes 25"> </p>
+   <p class="notes 26"> </p>
+   <p class="notes 27"> </p>
+   <p class="notes 28">
+      Correption: τοι
+   </p>
+   <p class="notes 29">
+      Correption: ἐγὼ
+   </p>
+   <p class="notes 30">
+      Correption: οἴκῳ
+   </p>
+   <p class="notes 31">
+      Correption: καὶ
+   </p>
+   <p class="notes 32"> </p>
+   <p class="notes 33">
+      Correption: καὶ
+      Text/Other: ἔδϝεισεν
+   </p>
+   <p class="notes 34"> </p>
+   <p class="notes 35"> </p>
+   <p class="notes 36"> </p>
+   <p class="notes 37">
+      Correption: μευ
+   </p>
+   <p class="notes 38"> </p>
+   <p class="notes 39"> </p>
+   <p class="notes 40"> </p>
+   <p class="notes 41"> </p>
+   <p class="notes 42"> </p>
+   <p class="notes 43"> </p>
+   <p class="notes 44"> </p>
+   <p class="notes 45">
+      Metrical Lengthening: ἀμφηρεφέα
+   </p>
+   <p class="notes 46">
+      Correption: ὀϊστοὶ
+   </p>
+   <p class="notes 47"> </p>
+   <p class="notes 48"> </p>
+   <p class="notes 49"> </p>
+   <p class="notes 50"> </p>
+   <p class="notes 51"> </p>
+   <p class="notes 52"> </p>
+   <p class="notes 53"> </p>
+   <p class="notes 54"> </p>
+   <p class="notes 55"> </p>
+   <p class="notes 56"> </p>
+   <p class="notes 57">
+      Correption: ἐπεὶ
+   </p>
+   <p class="notes 58"> </p>
+   <p class="notes 59"> </p>
+   <p class="notes 60"> </p>
+   <p class="notes 61">
+      Correption: δὴ
+   </p>
+   <p class="notes 62"> </p>
+   <p class="notes 63">
+      Correption: καὶ
+   </p>
+   <p class="notes 64"> </p>
+   <p class="notes 65"> </p>
+   <p class="notes 66"> </p>
+   <p class="notes 67"> </p>
+   <p class="notes 68">
+      Correption: ἤτοι
+   </p>
+   <p class="notes 69"> </p>
+   <p class="notes 70"> </p>
+   <p class="notes 71"> </p>
+   <p class="notes 72"> </p>
+   <p class="notes 73"> </p>
+   <p class="notes 74"> </p>
+   <p class="notes 75"> </p>
+   <p class="notes 76"> </p>
+   <p class="notes 77"> </p>
+   <p class="notes 78"> </p>
+   <p class="notes 79"> </p>
+   <p class="notes 80"> </p>
+   <p class="notes 81">
+      Correption: καὶ
+   </p>
+   <p class="notes 82"> </p>
+   <p class="notes 83">
+      Correption: φράσαι
+   </p>
+   <p class="notes 84"> </p>
+   <p class="notes 85"> </p>
+   <p class="notes 86"> </p>
+   <p class="notes 87"> </p>
+   <p class="notes 88">
+      Correption: καὶ
+   </p>
+   <p class="notes 89"> </p>
+   <p class="notes 90"> </p>
+   <p class="notes 91"> </p>
+   <p class="notes 92">
+      Correption: καὶ ηὔδα
+   </p>
+   <p class="notes 93"> </p>
+   <p class="notes 94"> </p>
+   <p class="notes 95"> </p>
+   <p class="notes 96"> </p>
+   <p class="notes 97"> </p>
+   <p class="notes 98"> </p>
+   <p class="notes 99"> </p>
+   <p class="notes 100"> </p>
+   <p class="notes 101"> </p>
+   <p class="notes 102"> </p>
+   <p class="notes 103"> </p>
+   <p class="notes 104"> </p>
+   <p class="notes 105"> </p>
+   <p class="notes 106"> </p>
+   <p class="notes 107"> </p>
+   <p class="notes 108"> </p>
+   <p class="notes 109"> </p>
+   <p class="notes 110"> </p>
+   <p class="notes 111"> </p>
+   <p class="notes 112"> </p>
+   <p class="notes 113"> </p>
+   <p class="notes 114"> </p>
+   <p class="notes 115"> </p>
+   <p class="notes 116"> </p>
+   <p class="notes 117"> </p>
+   <p class="notes 118"> </p>
+   <p class="notes 119"> </p>
+   <p class="notes 120"> </p>
+   <p class="notes 121"> </p>
+   <p class="notes 122"> </p>
+   <p class="notes 123"> </p>
+   <p class="notes 124"> </p>
+   <p class="notes 125"> </p>
+   <p class="notes 126"> </p>
+   <p class="notes 127"> </p>
+   <p class="notes 128"> </p>
+   <p class="notes 129"> </p>
+   <p class="notes 130"> </p>
+   <p class="notes 131"> </p>
+   <p class="notes 132"> </p>
+   <p class="notes 133"> </p>
+   <p class="notes 134"> </p>
+   <p class="notes 135"> </p>
+   <p class="notes 136"> </p>
+   <p class="notes 137"> </p>
+   <p class="notes 138"> </p>
+   <p class="notes 139"> </p>
+   <p class="notes 140"> </p>
+   <p class="notes 141"> </p>
+   <p class="notes 142"> </p>
+   <p class="notes 143"> </p>
+   <p class="notes 144"> </p>
+   <p class="notes 145"> </p>
+   <p class="notes 146"> </p>
+   <p class="notes 147"> </p>
+   <p class="notes 148"> </p>
+   <p class="notes 149"> </p>
+   <p class="notes 150"> </p>
+   <p class="notes 151"> </p>
+   <p class="notes 152"> </p>
+   <p class="notes 153"> </p>
+   <p class="notes 154"> </p>
+   <p class="notes 155"> </p>
+   <p class="notes 156"> </p>
+   <p class="notes 157"> </p>
+   <p class="notes 158"> </p>
+   <p class="notes 159"> </p>
+   <p class="notes 160"> </p>
+   <p class="notes 161"> </p>
+   <p class="notes 162"> </p>
+   <p class="notes 163"> </p>
+   <p class="notes 164"> </p>
+   <p class="notes 165"> </p>
+   <p class="notes 166"> </p>
+   <p class="notes 167"> </p>
+   <p class="notes 168"> </p>
+   <p class="notes 169"> </p>
+   <p class="notes 170"> </p>
+   <p class="notes 171"> </p>
+   <p class="notes 172"> </p>
+   <p class="notes 173"> </p>
+   <p class="notes 174"> </p>
+   <p class="notes 175"> </p>
+   <p class="notes 176"> </p>
+   <p class="notes 177"> </p>
+   <p class="notes 178"> </p>
+   <p class="notes 179"> </p>
+   <p class="notes 180"> </p>
+   <p class="notes 181"> </p>
+   <p class="notes 182"> </p>
+   <p class="notes 183"> </p>
+   <p class="notes 184"> </p>
+   <p class="notes 185"> </p>
+   <p class="notes 186"> </p>
+   <p class="notes 187"> </p>
+   <p class="notes 188"> </p>
+   <p class="notes 189"> </p>
+   <p class="notes 190"> </p>
+   <p class="notes 191"> </p>
+   <p class="notes 192"> </p>
+   <p class="notes 193"> </p>
+   <p class="notes 194"> </p>
+   <p class="notes 195"> </p>
+   <p class="notes 196"> </p>
+   <p class="notes 197"> </p>
+   <p class="notes 198"> </p>
+   <p class="notes 199"> </p>
+   <p class="notes 200"> </p>
+   <p class="notes 201"> </p>
+   <p class="notes 202"> </p>
+   <p class="notes 203"> </p>
+   <p class="notes 204"> </p>
+   <p class="notes 205"> </p>
+   <p class="notes 206"> </p>
+   <p class="notes 207"> </p>
+   <p class="notes 208"> </p>
+   <p class="notes 209"> </p>
+   <p class="notes 210"> </p>
+   <p class="notes 211"> </p>
+   <p class="notes 212"> </p>
+   <p class="notes 213"> </p>
+   <p class="notes 214"> </p>
+   <p class="notes 215"> </p>
+   <p class="notes 216"> </p>
+   <p class="notes 217"> </p>
+   <p class="notes 218"> </p>
+   <p class="notes 219"> </p>
+   <p class="notes 220"> </p>
+   <p class="notes 221"> </p>
+   <p class="notes 222"> </p>
+   <p class="notes 223"> </p>
+   <p class="notes 224"> </p>
+   <p class="notes 225"> </p>
+   <p class="notes 226"> </p>
+   <p class="notes 227"> </p>
+   <p class="notes 228"> </p>
+   <p class="notes 229"> </p>
+   <p class="notes 230"> </p>
+   <p class="notes 231"> </p>
+   <p class="notes 232"> </p>
+   <p class="notes 233"> </p>
+   <p class="notes 234"> </p>
+   <p class="notes 235"> </p>
+   <p class="notes 236"> </p>
+   <p class="notes 237"> </p>
+   <p class="notes 238"> </p>
+   <p class="notes 239"> </p>
+   <p class="notes 240"> </p>
+   <p class="notes 241"> </p>
+   <p class="notes 242"> </p>
+   <p class="notes 243"> </p>
+   <p class="notes 244">
+      Metrical Lengthening: χωόμενος
+   </p>
+   <p class="notes 245"> </p>
+   <p class="notes 246"> </p>
+   <p class="notes 247"> </p>
+   <p class="notes 248"> </p>
+   <p class="notes 249"> </p>
+   <p class="notes 250"> </p>
+   <p class="notes 251"> </p>
+   <p class="notes 252"> </p>
+   <p class="notes 253"> </p>
+   <p class="notes 254"> </p>
+   <p class="notes 255"> </p>
+   <p class="notes 256"> </p>
+   <p class="notes 257"> </p>
+   <p class="notes 258"> </p>
+   <p class="notes 259"> </p>
+   <p class="notes 260"> </p>
+   <p class="notes 261"> </p>
+   <p class="notes 262"> </p>
+   <p class="notes 263"> </p>
+   <p class="notes 264"> </p>
+   <p class="notes 265"> </p>
+   <p class="notes 266"> </p>
+   <p class="notes 267"> </p>
+   <p class="notes 268"> </p>
+   <p class="notes 269"> </p>
+   <p class="notes 270"> </p>
+   <p class="notes 271"> </p>
+   <p class="notes 272"> </p>
+   <p class="notes 273"> </p>
+   <p class="notes 274"> </p>
+   <p class="notes 275"> </p>
+   <p class="notes 276"> </p>
+   <p class="notes 277">
+      Text/Other: θέλ' (not ἔθελ')
+   </p>
+   <p class="notes 278"> </p>
+   <p class="notes 279"> </p>
+   <p class="notes 280"> </p>
+   <p class="notes 281"> </p>
+   <p class="notes 282"> </p>
+   <p class="notes 283"> </p>
+   <p class="notes 284"> </p>
+   <p class="notes 285"> </p>
+   <p class="notes 286"> </p>
+   <p class="notes 287"> </p>
+   <p class="notes 288"> </p>
+   <p class="notes 289"> </p>
+   <p class="notes 290"> </p>
+   <p class="notes 291"> </p>
+   <p class="notes 292"> </p>
+   <p class="notes 293"> </p>
+   <p class="notes 294"> </p>
+   <p class="notes 295"> </p>
+   <p class="notes 296"> </p>
+   <p class="notes 297"> </p>
+   <p class="notes 298"> </p>
+   <p class="notes 299"> </p>
+   <p class="notes 300"> </p>
+   <p class="notes 301"> </p>
+   <p class="notes 302"> </p>
+   <p class="notes 303"> </p>
+   <p class="notes 304"> </p>
+   <p class="notes 305"> </p>
+   <p class="notes 306"> </p>
+   <p class="notes 307"> </p>
+   <p class="notes 308"> </p>
+   <p class="notes 309"> </p>
+   <p class="notes 310"> </p>
+   <p class="notes 311"> </p>
+   <p class="notes 312"> </p>
+   <p class="notes 313"> </p>
+   <p class="notes 314"> </p>
+   <p class="notes 315"> </p>
+   <p class="notes 316"> </p>
+   <p class="notes 317"> </p>
+   <p class="notes 318"> </p>
+   <p class="notes 319"> </p>
+   <p class="notes 320"> </p>
+   <p class="notes 321"> </p>
+   <p class="notes 322"> </p>
+   <p class="notes 323"> </p>
+   <p class="notes 324"> </p>
+   <p class="notes 325"> </p>
+   <p class="notes 326"> </p>
+   <p class="notes 327"> </p>
+   <p class="notes 328"> </p>
+   <p class="notes 329"> </p>
+   <p class="notes 330"> </p>
+   <p class="notes 331"> </p>
+   <p class="notes 332"> </p>
+   <p class="notes 333"> </p>
+   <p class="notes 334"> </p>
+   <p class="notes 335"> </p>
+   <p class="notes 336"> </p>
+   <p class="notes 337"> </p>
+   <p class="notes 338"> </p>
+   <p class="notes 339"> </p>
+   <p class="notes 340"> </p>
+   <p class="notes 341"> </p>
+   <p class="notes 342"> </p>
+   <p class="notes 343"> </p>
+   <p class="notes 344"> </p>
+   <p class="notes 345"> </p>
+   <p class="notes 346"> </p>
+   <p class="notes 347"> </p>
+   <p class="notes 348"> </p>
+   <p class="notes 349"> </p>
+   <p class="notes 350"> </p>
+   <p class="notes 351"> </p>
+   <p class="notes 352"> </p>
+   <p class="notes 353"> </p>
+   <p class="notes 354"> </p>
+   <p class="notes 355"> </p>
+   <p class="notes 356"> </p>
+   <p class="notes 357"> </p>
+   <p class="notes 358"> </p>
+   <p class="notes 359"> </p>
+   <p class="notes 360"> </p>
+   <p class="notes 361"> </p>
+   <p class="notes 362"> </p>
+   <p class="notes 363"> </p>
+   <p class="notes 364"> </p>
+   <p class="notes 365"> </p>
+   <p class="notes 366"> </p>
+   <p class="notes 367"> </p>
+   <p class="notes 368"> </p>
+   <p class="notes 369"> </p>
+   <p class="notes 370"> </p>
+   <p class="notes 371"> </p>
+   <p class="notes 372"> </p>
+   <p class="notes 373"> </p>
+   <p class="notes 374">
+      Text/Other: Pharr has καὶ  ἐλίσσετο
+   </p>
+   <p class="notes 375"> </p>
+   <p class="notes 376"> </p>
+   <p class="notes 377"> </p>
+   <p class="notes 378"> </p>
+   <p class="notes 379"> </p>
+   <p class="notes 380"> </p>
+   <p class="notes 381"> </p>
+   <p class="notes 382"> </p>
+   <p class="notes 383"> </p>
+   <p class="notes 384"> </p>
+   <p class="notes 385"> </p>
+   <p class="notes 386"> </p>
+   <p class="notes 387"> </p>
+   <p class="notes 388"> </p>
+   <p class="notes 389"> </p>
+   <p class="notes 390"> </p>
+   <p class="notes 391"> </p>
+   <p class="notes 392"> </p>
+   <p class="notes 393"> </p>
+   <p class="notes 394"> </p>
+   <p class="notes 395"> </p>
+   <p class="notes 396">
+      Metrical Lengthening: ἐνὶ μεγάροισιν, vowel + λ, μ,ν, ρ
+   </p>
+   <p class="notes 397"> </p>
+   <p class="notes 398"> </p>
+   <p class="notes 399"> </p>
+   <p class="notes 400"> </p>
+   <p class="notes 401"> </p>
+   <p class="notes 402"> </p>
+   <p class="notes 403"> </p>
+   <p class="notes 404"> </p>
+   <p class="notes 405"> </p>
+   <p class="notes 406"> </p>
+   <p class="notes 407"> </p>
+   <p class="notes 408"> </p>
+   <p class="notes 409"> </p>
+   <p class="notes 410"> </p>
+   <p class="notes 411"> </p>
+   <p class="notes 412"> </p>
+   <p class="notes 413"> </p>
+   <p class="notes 414"> </p>
+   <p class="notes 415"> </p>
+   <p class="notes 416"> </p>
+   <p class="notes 417"> </p>
+   <p class="notes 418"> </p>
+   <p class="notes 419"> </p>
+   <p class="notes 420"> </p>
+   <p class="notes 421"> </p>
+   <p class="notes 422"> </p>
+   <p class="notes 423"> </p>
+   <p class="notes 424"> </p>
+   <p class="notes 425"> </p>
+   <p class="notes 426"> </p>
+   <p class="notes 427"> </p>
+   <p class="notes 428"> </p>
+   <p class="notes 429"> </p>
+   <p class="notes 430"> </p>
+   <p class="notes 431"> </p>
+   <p class="notes 432"> </p>
+   <p class="notes 433"> </p>
+   <p class="notes 434"> </p>
+   <p class="notes 435"> </p>
+   <p class="notes 436"> </p>
+   <p class="notes 437"> </p>
+   <p class="notes 438"> </p>
+   <p class="notes 439"> </p>
+   <p class="notes 440"> </p>
+   <p class="notes 441"> </p>
+   <p class="notes 442"> </p>
+   <p class="notes 443"> </p>
+   <p class="notes 444"> </p>
+   <p class="notes 445"> </p>
+   <p class="notes 446"> </p>
+   <p class="notes 447"> </p>
+   <p class="notes 448"> </p>
+   <p class="notes 449"> </p>
+   <p class="notes 450"> </p>
+   <p class="notes 451"> </p>
+   <p class="notes 452"> </p>
+   <p class="notes 453"> </p>
+   <p class="notes 454"> </p>
+   <p class="notes 455"> </p>
+   <p class="notes 456"> </p>
+   <p class="notes 457"> </p>
+   <p class="notes 458"> </p>
+   <p class="notes 459"> </p>
+   <p class="notes 460"> </p>
+   <p class="notes 461"> </p>
+   <p class="notes 462"> </p>
+   <p class="notes 463"> </p>
+   <p class="notes 464"> </p>
+   <p class="notes 465"> </p>
+   <p class="notes 466"> </p>
+   <p class="notes 467"> </p>
+   <p class="notes 468"> </p>
+   <p class="notes 469"> </p>
+   <p class="notes 470"> </p>
+   <p class="notes 471"> </p>
+   <p class="notes 472"> </p>
+   <p class="notes 473"> </p>
+   <p class="notes 474"> </p>
+   <p class="notes 475"> </p>
+   <p class="notes 476"> </p>
+   <p class="notes 477"> </p>
+   <p class="notes 478"> </p>
+   <p class="notes 479"> </p>
+   <p class="notes 480"> </p>
+   <p class="notes 481"> </p>
+   <p class="notes 482"> </p>
+   <p class="notes 483"> </p>
+   <p class="notes 484"> </p>
+   <p class="notes 485"> </p>
+   <p class="notes 486"> </p>
+   <p class="notes 487"> </p>
+   <p class="notes 488"> </p>
+   <p class="notes 489">
+      Correption: υἱὸς, before vowel in same word
+   </p>
+   <p class="notes 490"> </p>
+   <p class="notes 491"> </p>
+   <p class="notes 492"> </p>
+   <p class="notes 493"> </p>
+   <p class="notes 494"> </p>
+   <p class="notes 495"> </p>
+   <p class="notes 496"> </p>
+   <p class="notes 497"> </p>
+   <p class="notes 498"> </p>
+   <p class="notes 499"> </p>
+   <p class="notes 500"> </p>
+   <p class="notes 501"> </p>
+   <p class="notes 502"> </p>
+   <p class="notes 503"> </p>
+   <p class="notes 504"> </p>
+   <p class="notes 505"> </p>
+   <p class="notes 506"> </p>
+   <p class="notes 507"> </p>
+   <p class="notes 508"> </p>
+   <p class="notes 509"> </p>
+   <p class="notes 510"> </p>
+   <p class="notes 511"> </p>
+   <p class="notes 512"> </p>
+   <p class="notes 513"> </p>
+   <p class="notes 514"> </p>
+   <p class="notes 515"> </p>
+   <p class="notes 516"> </p>
+   <p class="notes 517"> </p>
+   <p class="notes 518"> </p>
+   <p class="notes 519"> </p>
+   <p class="notes 520"> </p>
+   <p class="notes 521"> </p>
+   <p class="notes 522"> </p>
+   <p class="notes 523"> </p>
+   <p class="notes 524"> </p>
+   <p class="notes 525"> </p>
+   <p class="notes 526"> </p>
+   <p class="notes 527"> </p>
+   <p class="notes 528"> </p>
+   <p class="notes 529"> </p>
+   <p class="notes 530"> </p>
+   <p class="notes 531"> </p>
+   <p class="notes 532"> </p>
+   <p class="notes 533"> </p>
+   <p class="notes 534"> </p>
+   <p class="notes 535"> </p>
+   <p class="notes 536"> </p>
+   <p class="notes 537"> </p>
+   <p class="notes 538"> </p>
+   <p class="notes 539"> </p>
+   <p class="notes 540"> </p>
+   <p class="notes 541"> </p>
+   <p class="notes 542"> </p>
+   <p class="notes 543"> </p>
+   <p class="notes 544"> </p>
+   <p class="notes 545"> </p>
+   <p class="notes 546"> </p>
+   <p class="notes 547"> </p>
+   <p class="notes 548">
+      Text/Other: τὸν γ' εἴσεται Pharr adds  γ᾽
+   </p>
+   <p class="notes 549"> </p>
+   <p class="notes 550"> </p>
+   <p class="notes 551"> </p>
+   <p class="notes 552"> </p>
+   <p class="notes 553"> </p>
+   <p class="notes 554"> </p>
+   <p class="notes 555"> </p>
+   <p class="notes 556"> </p>
+   <p class="notes 557"> </p>
+   <p class="notes 558"> </p>
+   <p class="notes 559"> </p>
+   <p class="notes 560"> </p>
+   <p class="notes 561"> </p>
+   <p class="notes 562"> </p>
+   <p class="notes 563"> </p>
+   <p class="notes 564"> </p>
+   <p class="notes 565"> </p>
+   <p class="notes 566"> </p>
+   <p class="notes 567"> </p>
+   <p class="notes 568">
+      Text/Other: ἔδϝεισεν
+   </p>
+   <p class="notes 569"> </p>
+   <p class="notes 570"> </p>
+   <p class="notes 571"> </p>
+   <p class="notes 572"> </p>
+   <p class="notes 573"> </p>
+   <p class="notes 574"> </p>
+   <p class="notes 575"> </p>
+   <p class="notes 576"> </p>
+   <p class="notes 577"> </p>
+   <p class="notes 578"> </p>
+   <p class="notes 579"> </p>
+   <p class="notes 580"> </p>
+   <p class="notes 581"> </p>
+   <p class="notes 582">
+      Text/Other: τὸν γ᾽ἐπέεσσι Pharr adds  γ
+   </p>
+   <p class="notes 583"> </p>
+   <p class="notes 584"> </p>
+   <p class="notes 585"> </p>
+   <p class="notes 586"> </p>
+   <p class="notes 587"> </p>
+   <p class="notes 588"> </p>
+   <p class="notes 589"> </p>
+   <p class="notes 590"> </p>
+   <p class="notes 591"> </p>
+   <p class="notes 592"> </p>
+   <p class="notes 593"> </p>
+   <p class="notes 594"> </p>
+   <p class="notes 595"> </p>
+   <p class="notes 596"> </p>
+   <p class="notes 597"> </p>
+   <p class="notes 598"> </p>
+   <p class="notes 599"> </p>
+   <p class="notes 600"> </p>
+   <p class="notes 601"> </p>
+   <p class="notes 602"> </p>
+   <p class="notes 603"> </p>
+   <p class="notes 604"> </p>
+   <p class="notes 605"> </p>
+   <p class="notes 606"> </p>
+   <p class="notes 607"> </p>
+   <p class="notes 608"> </p>
+   <p class="notes 609">
+      Text/Other: δὲ πρὸς  vowel + πρ is "common,' can be long or short, as here
+   </p>
+   <p class="notes 610"> </p>
+   <p class="notes 611"> </p>
+</body>

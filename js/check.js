@@ -1,17 +1,52 @@
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
 $(document).ready(function(){
+  // Get the book, start and end lines
+  var book = Number(getUrlParameter('book'));
+  var start = Number(getUrlParameter('start'));
+  var end = Number(getUrlParameter('end'));
+
+
+  // Hide the lines that we're not scanning
+  if(start > 1) {
+    for(var i = 1; i < start; i++) {
+      $("." + i + "").hide();
+    }
+  }
+  if(end < 611) {
+    for(var i = end+1; i <= 611; i++) {
+      $("." + i + "").hide();
+    }
+  }
+
+
   $("#right").hide();
   $("#wrong").hide();
   $(".correct").hide();
   $(".answer").hide();
   $(".notes").hide();
 
+  var curLineNum = start;
   // Store the line, correct answer, and user's input
-  $(".answer").first().show();
-  var curLine = $(".line").first();
-  var curCorrect = $(".correct").first();
-  var curAnswer = $(".answer").first();
-  var curNotes = $(".notes").first();
+  var curLine = $(".line." + curLineNum + "");
+  var curCorrect = $(".correct." + curLineNum + "");
+  var curAnswer = $(".answer." + curLineNum + "");
+  var curNotes = $(".notes." + curLineNum + "");
   curLine.css('color', 'red');
+  curAnswer.show();
   curAnswer.focus();
 
   //Pressing enter triggers the "done" button
@@ -23,32 +58,35 @@ $(document).ready(function(){
   });
   // When the button is clicked, check the answer
   $("#Done").click(function() {
-    curAnswer.blur();
-    var answer = curAnswer.val().replace(/\s/g, "");
-    var correct = curCorrect.text().replace(/\s/g, "");
+    var answer = $(".answer." + curLineNum + "").val().replace(/\s/g, "");
+    var correct = $(".correct." + curLineNum + "").text().replace(/\s/g, "");
 
     // If the answer is correct, move to the next line
     if($.trim(answer) === $.trim(correct)) {
       $("#right").show();
       $("#wrong").hide();
-      curAnswer.hide();
-      curNotes.hide();
-      curCorrect.show();
-      curLine.css('color', 'black');
+      // Hide the textbox for the completed line
+      $(".answer." + curLineNum + "").hide();
+      $(".notes." + curLineNum + "").hide();
+      $(".correct." + curLineNum + "").show();
+      $(".line." + curLineNum + "").css('color', 'black');
 
       // Check if all the lines have been scanned
-      if(curAnswer.is($(".answer").last())) {
-        curAnswer.blur();
+      if(curLineNum===end) {
         alert("Nice job! You've finished!");
-        $(".notes").show();
+        for(var i = start; i <= end; i++) {
+          $(".notes." + i + "").show();
+        }
       }
       else {
-        curAnswer.blur();
-        curAnswer = curAnswer.next().next().next();
-        curLine = curLine.next().next().next();
-        curNotes = curNotes.next();
+        // Move to the next line
+        curLineNum+=1;
+        curLine = $(".line." + curLineNum + "");
+        curCorrect = $(".correct." + curLineNum + "");
+        curAnswer = $(".answer." + curLineNum + "");
+        curNotes = $(".notes." + curLineNum + "");
+
         curAnswer.show();
-        curCorrect = curCorrect.next().next().next();
         curLine.css('color', 'red');
         curAnswer.focus();
         //Pressing enter triggers the "done" button
