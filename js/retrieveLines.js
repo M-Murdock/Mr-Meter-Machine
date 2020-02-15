@@ -8,20 +8,17 @@ var app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: true });
 
 app.use(express.static('../'));
-//The initial form for choosing lines
-app.get('/', function (req, res) {
-  res.sendFile('../index.html');
-});
 
 //Set up the server
 var port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log('Server is listening on port ' + port);
+  generateHTML();
 })
 
-//The page for scanning
-app.post('/linesChosen', urlencodedParser, function(req, res) {
-  var book = req.body.book;
+//Generate the HTML and save it to Iliad.html
+function generateHTML() {
+  var book = 1;
   var file = '../IliadLines/book' + book + '.json';
   // Read the JSON file containing the chosen Iliad lines
   fs.readFile(file, (err, data) => {
@@ -31,10 +28,10 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
     var chosenLines = '';
     var scansion = '';
     var usefulNotes = '';
-    var start = req.body.start;
-    var end = req.body.end;
+    var start = 1;
+    var end = 164;
     // Read each line
-    for (var i = 1; i <= 611; i++) {
+    for (var i = start; i <= end; i++) {
       scansion = '';
       scansion += (lines[i-1].__0);
       scansion += (lines[i-1].__1);
@@ -82,13 +79,12 @@ app.post('/linesChosen', urlencodedParser, function(req, res) {
       <p id="wrong">Not Quite</p>'
       + usefulNotes +
     '</body>'
-    // Display the lines on the page
 
+    // Write the HTML to file
     fs.writeFile('Iliad.html', html, (err) =>  {
       if (err) throw err;
 
       console.log('Iliad file written');
     });
-    res.send(html);
   });
-});
+}
