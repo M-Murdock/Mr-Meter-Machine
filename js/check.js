@@ -1,3 +1,4 @@
+// Use the url to store and retrieve the line numbers
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -73,7 +74,8 @@ $(document).ready(function(){
 
       // Check if all the lines have been scanned
       if(curLineNum===end) {
-        alert("Nice job! You've finished!");
+        if(confirm("Nice job! You've finished! Do you want to return to the main page?"))
+          window.location.href="index.html";
         for(var i = start; i <= end; i++) {
           $(".notes." + i + "").show();
         }
