@@ -1,9 +1,19 @@
+/**
+  Checks the line numbers to make sure they are within a valid range
+**/
 $(document).ready(function(){
-  start = $("input[name=start]").val();
-  end = $("input[name=start]").val();
+  start = Number($("input[name=start]").val());
+  end = Number($("input[name=end]").val());
 
+  $("input[name=start], input[name=end]").change(function() {
+    start = Number($("input[name=start]").val());
+    end = Number($("input[name=end]").val());
 
-  $("#submit").click(function() {
-    
+    if(start >= end) {
+      $("#submit").prop('disabled', true);
+    }
+    else {
+      $("#submit").prop('disabled', false);
+    }
   });
 });

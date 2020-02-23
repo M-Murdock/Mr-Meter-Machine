@@ -8,5 +8,9 @@ body {
 }
 
 .answer {
-  width:20%;
+  size="30";
+}
+
+input[type="text"] {
+  font-size:20px;
 }
