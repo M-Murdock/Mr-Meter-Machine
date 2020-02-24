@@ -12,6 +12,9 @@ $(document).ready(function(){
     if(start >= end) {
       $("#submit").prop('disabled', true);
     }
+    else if(end - start >= 5) {
+      $("#submit").prop('disabled', true);
+    }
     else {
       $("#submit").prop('disabled', false);
     }

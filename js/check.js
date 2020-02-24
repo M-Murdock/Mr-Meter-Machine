@@ -1,3 +1,7 @@
+/**
+  Main code for checking scansion 
+**/
+
 // Use the url to store and retrieve the line numbers
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
