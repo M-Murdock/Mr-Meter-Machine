@@ -18,3 +18,7 @@ input[type="text"] {
 .correct {
   font-size: 20px;
 }
+
+p:first-of-type {
+  font-weight: bold;
+}

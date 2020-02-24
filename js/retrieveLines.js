@@ -72,9 +72,9 @@ function generateHTML() {
     </head>\
     <body>\
       <h1>Mr. Meter Machine</h1>\
-      <p>Instructions: Scan the line in red in the text box by marking syllables as short (u) or long (hyphen -). Press "done" or hit enter to check your answer. Once you get it right, you can scan the next line.</p>'
+      <p>Instructions: Scan the line in red in the text box by marking syllables as short (u) or long (hyphen -). Press "check" or hit enter to check your answer. Once you get it right, you can scan the next line.</p>'
       +chosenLines+
-      '<button id="Done">Done</button>\
+      '<button id="Done">Check</button>\
       <p id="right">Great Job!</p>\
       <p id="wrong">Not Quite</p>'
       + usefulNotes +

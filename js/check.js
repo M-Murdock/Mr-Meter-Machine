@@ -1,5 +1,5 @@
 /**
-  Main code for checking scansion 
+  Main code for checking scansion
 **/
 
 // Use the url to store and retrieve the line numbers
@@ -18,13 +18,17 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
-$(document).ready(function(){
+$(document).ready(function (){
+  $('body').append("<button id='next'>Next 5 Lines</button>")
   // Get the book, start and end lines
   var book = Number(getUrlParameter('book'));
   var start = Number(getUrlParameter('start'));
   var end = Number(getUrlParameter('end'));
+  $("p:first").append("<h3>Book " + book + " lines " + start + " - " + end + "</h3>");
 
-
+  $('#next').click(function() {
+    window.location.href = "Iliad.html" + '?book=' + book + '&start=' + (end+1) + '&end=' + (end+5);
+  });
   // Hide the lines that we're not scanning
   if(start > 1) {
     for(var i = 1; i < start; i++) {
