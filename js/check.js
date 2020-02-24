@@ -60,6 +60,7 @@ $(document).ready(function(){
   // When the button is clicked, check the answer
   $("#Done").click(function() {
     var answer = $(".answer." + curLineNum + "").val().replace(/\s/g, "");
+    var answer = $(".answer." + curLineNum + "").val().replace(".", "");
     var correct = $(".correct." + curLineNum + "").text().replace(/\s/g, "");
 
     // If the answer is correct, move to the next line

@@ -8,9 +8,13 @@ body {
 }
 
 .answer {
-  size="30";
+  size= "30";
 }
 
 input[type="text"] {
-  font-size:20px;
+  font-size: 20px;
+}
+
+.correct {
+  font-size: 20px;
 }
