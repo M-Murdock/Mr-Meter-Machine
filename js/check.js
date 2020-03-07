@@ -19,7 +19,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 $(document).ready(function (){
-  $('body').append("<button id='next'>Next 5 Lines</button>")
+  $('body').append("<button id='next'>Next 5 Lines</button></br><button id='home'>Return to Home</button>");
   // Get the book, start and end lines
   var book = Number(getUrlParameter('book'));
   var start = Number(getUrlParameter('start'));
@@ -28,6 +28,9 @@ $(document).ready(function (){
 
   $('#next').click(function() {
     window.location.href = "Iliad.html" + '?book=' + book + '&start=' + (end+1) + '&end=' + (end+5);
+  });
+  $('#home').click(function() {
+    window.location.href = "index.html";
   });
   // Hide the lines that we're not scanning
   if(start > 1) {
