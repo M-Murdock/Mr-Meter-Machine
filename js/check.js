@@ -38,8 +38,9 @@ $(document).ready(function (){
       $("." + i + "").hide();
     }
   }
-  if(end < 611) {
-    for(var i = end+1; i <= 611; i++) {
+  var endNum = 1000;
+  if(end < endNum) {
+    for(var i = end+1; i <= endNum; i++) {
       $("." + i + "").hide();
     }
   }
