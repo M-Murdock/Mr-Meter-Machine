@@ -19,7 +19,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 $(document).ready(function (){
-  $('body').append("<button id='next'>Next 5 Lines</button></br><button id='home'>Return to Home</button>");
+  $('body').append("</br><button id='next'>Next 5 Lines</button><button id='home'>Return to Home</button>");
   // Get the book, start and end lines
   var book = Number(getUrlParameter('book'));
   var start = Number(getUrlParameter('start'));
@@ -67,6 +67,43 @@ $(document).ready(function (){
     if (event.keyCode === 13) {
       // Trigger the button element with a click
       $("#Done").click();
+    }
+  });
+  // When 'skip' is clicked, skip to the next line
+  $('#skip').click(function() {
+    $("#wrong").hide();
+    // Hide the textbox for the completed line
+    $(".answer." + curLineNum + "").hide();
+    $(".notes." + curLineNum + "").hide();
+    $(".correct." + curLineNum + "").show();
+    $(".line." + curLineNum + "").css('color', 'black');
+
+    // Check if all the lines have been scanned
+    if(curLineNum===end) {
+      if(confirm("You've finished! Do you want to return to the main page?"))
+        window.location.href="index.html";
+      for(var i = start; i <= end; i++) {
+        $(".notes." + i + "").show();
+      }
+    }
+    else {
+      // Move to the next line
+      curLineNum+=1;
+      curLine = $(".line." + curLineNum + "");
+      curCorrect = $(".correct." + curLineNum + "");
+      curAnswer = $(".answer." + curLineNum + "");
+      curNotes = $(".notes." + curLineNum + "");
+
+      curAnswer.show();
+      curLine.css('color', 'red');
+      curAnswer.focus();
+      //Pressing enter triggers the "done" button
+      curAnswer.keyup(function(event) {
+        if (event.keyCode === 13) {
+          // Trigger the button element with a click
+          $("#Done").click();
+        }
+      });
     }
   });
   // When the button is clicked, check the answer

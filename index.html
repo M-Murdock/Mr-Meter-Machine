@@ -9,14 +9,17 @@
 <body>
   <script src="js/jquery-3.4.1.js"></script>
   <h1>Mr. Meter Machine</h1>
+  <p id="instructions">Select up to 5 lines to scan: </p>
   <form action="Iliad.html" method="get">
     <label for="book">Book</label>
     <input type="number" min="1" max="1" name="book" value="1" id="book">
-    <label for="start">From line</label>
+    <br>
+    <label for="start">Lines</label>
     <input type="number" name="start" min="1" value="1" id="start">
     <label for="end">to</label>
     <input type="number" name="end" min="2" value="2" id="end">
     <input type="submit" id="submit">
 
   </form>
+  <p id="feedback"></p>
 </body>

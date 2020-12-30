@@ -11,12 +11,15 @@ $(document).ready(function(){
 
     if(start >= end) {
       $("#submit").prop('disabled', true);
+      $("#feedback").text("Choose a valid range");
     }
     else if(end - start >= 5) {
       $("#submit").prop('disabled', true);
+      $("#feedback").text("Choose fewer lines");
     }
     else {
       $("#submit").prop('disabled', false);
+      $("#feedback").text("");
     }
   });
 });
