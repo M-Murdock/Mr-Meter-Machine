@@ -95,3 +95,14 @@ h3 {
 #home {
   width: 48%;
 }
+
+
+#wrong {
+  color: red;
+  font-weight: bold;
+}
+
+#right {
+  color: #4CAF50;
+  font-weight: bold;
+}
