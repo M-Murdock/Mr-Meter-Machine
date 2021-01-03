@@ -112,3 +112,7 @@ h3 {
   bottom: 0;
   right: 10px;
 }
+
+#scan-instructions {
+  width:75%; 
+}
