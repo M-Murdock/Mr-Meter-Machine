@@ -13,7 +13,7 @@ $(document).ready(function(){
       $("#submit").prop('disabled', true);
       $("#feedback").text("Choose a valid range");
     }
-    else if(end - start >= 5) {
+    else if(end - start >= 10) {
       $("#submit").prop('disabled', true);
       $("#feedback").text("Choose fewer lines");
     }
