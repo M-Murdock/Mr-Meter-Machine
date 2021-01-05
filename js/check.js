@@ -111,6 +111,9 @@ $(document).ready(function (){
     var answer = $(".answer." + curLineNum + "").val().replace(/\s/g, "");
     var answer = answer.replace(/\./g, "");
     var answer = answer.replace(/\|/g, "");
+    // replace l with - and s with u
+    var answer = answer.replace(/l/g, "-");
+    var answer = answer.replace(/s/g, "u");
     var correct = $(".correct." + curLineNum + "").text().replace(/\s/g, "");
 
     // If the answer is correct, move to the next line
