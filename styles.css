@@ -46,6 +46,58 @@ form {
   color: red;
 }
 
+
+/* Everything Dialog Box */
+
+
+/* Outer container of the dialog box */
+.ui-dialog {
+  border-style: none;
+  border-radius: 5%;
+  margin: 10px 10px;
+  padding: 30px 30px;
+  margin-bottom: 0px;
+  background-color: #dff4f5;
+}
+
+.ui-dialog p {
+  font-weight: normal;
+}
+/* Buttons */
+.ui-dialog-buttonpane {
+  width: 100%;
+}
+.ui-dialog-buttonset button{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 3px;
+  width: 48%;
+  height: 30%;
+}
+
+.ui-dialog-titlebar-close {
+  background-color: #4CAFB0;
+  border-radius: 5%;
+}
+
+/* body :not(.unblurred), body :not(.unblurred) * {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+} */
+
+/* .unblurred {
+-webkit-filter: blur(-2px);
+-moz-filter: blur(-2px);
+-o-filter: blur(-2px);
+-ms-filter: blur(-2px);
+filter: blur(-2px);
+} */
+/* .no-close .ui-dialog-titlebar-close {
+  display: none;
+} */
+
+/* ********** */
+
 form input{
   font-size: 15px;
   padding: 16px 25px;

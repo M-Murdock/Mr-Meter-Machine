@@ -18,8 +18,38 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
+
 $(document).ready(function (){
-  $('body').append("</br><button id='next'>Next 5 Lines</button><button id='home'>Return to Home</button>");
+
+  // Add the buttons at the bottom of the page
+  $('#main').append("</br><button id='next'>Next 5 Lines</button><button id='home'>Return to Home</button>");
+
+  // Dialog box
+  $('body').append("<div id='dialog'><p>Good Work! You've finished scanning these lines. Would you like to return to the homepage or continue to the next five lines?</p></div>");
+  $( "#dialog" ).dialog({
+      autoOpen: false,
+      resizable: false,
+      height: "auto",
+      closeText: "X",
+      width: 400,
+      modal: true,
+      close: function() {
+        $('#main').css({'-webkit-filter':'blur(0px)', 'filter': 'blur(0px)'});
+
+      },
+      buttons: {
+        "Continue": function() {
+          $( this ).dialog( "close" );
+          window.location.href = "Iliad.html" + '?book=' + book + '&start=' + (end+1) + '&end=' + (end+5);
+        },
+        "Home": function() {
+          $( this ).dialog( "close" );
+          window.location.href="index.html";
+        }
+      }
+    });
+
+
   // Get the book, start and end lines
   var book = Number(getUrlParameter('book'));
   var start = Number(getUrlParameter('start'));
@@ -80,8 +110,10 @@ $(document).ready(function (){
 
     // Check if all the lines have been scanned
     if(curLineNum===end) {
-      if(confirm("You've finished! Do you want to return to the main page?"))
-        window.location.href="index.html";
+      // Ask if the user wants to return to the main page/continue to the next 5 lines
+      $( "#dialog" ).dialog( "open" );
+      $('#main').css({'-webkit-filter':'blur(2px)', 'filter': 'blur(2px)'});
+
       for(var i = start; i <= end; i++) {
         $(".notes." + i + "").show();
       }
@@ -128,8 +160,10 @@ $(document).ready(function (){
 
       // Check if all the lines have been scanned
       if(curLineNum===end) {
-        if(confirm("Nice job! You've finished! Do you want to return to the main page?"))
-          window.location.href="index.html";
+        // Ask if the user wants to return to the main page/continue to the next 5 lines
+        $( "#dialog" ).dialog( "open" );
+        $('#main').css({'-webkit-filter':'blur(2px)', 'filter': 'blur(2px)'});
+
         for(var i = start; i <= end; i++) {
           $(".notes." + i + "").show();
         }
