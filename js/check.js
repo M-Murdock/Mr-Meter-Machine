@@ -25,7 +25,7 @@ $(document).ready(function (){
   $('#main').append("</br><button id='next'>Next 5 Lines</button><button id='home'>Return to Home</button>");
 
   // Dialog box
-  $('body').append("<div id='dialog'><p>Good Work! You've finished scanning these lines. Would you like to return to the homepage or continue to the next five lines?</p></div>");
+  $('body').append("<div id='dialog'><p>Good Work! You've finished scanning these lines. Would you like to continue to the next five lines or return to the homepage?</p></div>");
   $( "#dialog" ).dialog({
       autoOpen: false,
       resizable: false,
